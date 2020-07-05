@@ -1,0 +1,40 @@
+// Abstract
+@import '../assets/sass/abstract/variables';
+@import '../assets/sass/abstract/reset';
+@import '../assets/sass/abstract/mixins';
+@import '../assets/sass/abstract/breakpoints';
+@import '../assets/sass/abstract/utils';
+
+// Layouts
+@import '../assets/sass/layout/header';
+@import '../assets/sass/layout/footer';
+
+// Components
+@import '../assets/sass/components/button';
+@import '../assets/sass/components/checkbox';
+@import '../assets/sass/components/label';
+@import '../assets/sass/components/product-card-horizontal';
+@import '../assets/sass/components/product-card-vertical';
+@import '../assets/sass/components/radio-button';
+@import '../assets/sass/components/range';
+@import '../assets/sass/components/select';
+@import '../assets/sass/components/back';
+@import '../assets/sass/components/avatar';
+@import '../assets/sass/components/pagination';
+@import '../assets/sass/components/input';
+@import '../assets/sass/components/textarea';
+
+// Pages
+@import '../assets/sass/pages/home';
+@import '../assets/sass/pages/browse';
+@import '../assets/sass/pages/detail';
+@import '../assets/sass/pages/ad-edit';
+@import '../assets/sass/pages/chat';
+
+body {
+    background-color: $theme-extra-light;
+
+    &.white {
+        background-color: white;
+    }
+}
