@@ -1,0 +1,225 @@
+body {
+    height: 100vh;
+    @include flex(stretch, stretch, column);
+    overflow: hidden;
+
+    #main {
+        flex: 1;
+    }
+}
+
+#user-name {
+    color: $theme-gray-dark;
+    @include font(16px, bold);
+}
+
+.Chat {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+
+    .chat-list {
+        background-color: white;
+        @include blurry-shadow;
+        height: 100%;
+
+        .item {
+            padding: 20px;
+            cursor: pointer;
+            @include flex(stretch, center);
+            border-bottom: 1px solid $theme-lines;
+
+            &.active {
+                background-color: $theme-extra-light;
+            }
+
+            &.new {
+                .recent-message, .time {
+                    font-weight: bold !important;
+                }
+            }
+
+            .Avatar {
+                flex-shrink: 0;
+                margin-right: 20px;
+            }
+
+            .Avatar + div {
+                @include flex(stretch, flex-start);
+                flex: 1;
+
+                .details {
+                    flex: 1;
+                    margin-right: 10px;
+
+                    .name {
+                        @extend #user-name;
+                    }
+
+                    .recent-message {
+                        margin-top: 5px;
+                        color: $theme-gray;
+                        @include font(14px);
+                        line-height: 120%;
+
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 200px;
+                        overflow: hidden;
+                    }
+                }
+
+                .time {
+                    @include font(12px);
+                    margin-left: auto;
+                    color: $theme-gray;
+                }
+            }
+        }
+    }
+
+    .conversation {
+        @include flex(stretch, stretch, column);
+
+        .header {
+            padding: 15px 30px 15px 20px;
+            background-color: $theme-extra-light;
+            @include blurry-shadow;
+            @include flex(space-between, center);
+
+            .details {
+                background-color: $theme-extra-light;
+                @include flex(flex-start, center);
+
+                .Avatar {
+                    margin-right: 20px;
+                }
+
+                .name {
+                    @extend #user-name;
+                }
+            }
+
+            .icon {
+                color: $theme-gray;
+                cursor: pointer;
+            }
+        }
+
+        .chat-area {
+            position: relative;
+            flex: 1;
+            @include flex(stretch, stretch, column);
+
+            .chat-messages {
+                padding: 0 10%;
+                max-height: calc(100vh - 300px);
+                overflow-y: auto;
+
+                .item {
+                    &:not(:last-child) {
+                        margin-bottom: 40px;
+                    }
+
+                    &:first-child {
+                        margin-top: 25px;
+                    }
+
+                    .date {
+                        margin-bottom: 30px;
+                        display: block;
+                        @include font(12px, 800);
+                        color: $theme-gray-light;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+                    }
+
+                    .message {
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .content {
+                        padding: 20px;
+                        max-width: 400px;
+                        border-radius: 3px;
+                        @include font(16px);
+                        line-height: 120%;
+                        @include blurry-shadow;
+
+                        .time {
+                            margin-top: 5px;
+                            margin-bottom: -5px;
+                            display: block;
+                            text-align: right;
+                            @include font(12px);
+                        }
+                    }
+
+                    &.user {
+                        .message {
+                            @include flex(stretch, stretch);
+
+                            .Avatar {
+                                margin-right: 20px;
+                            }
+
+                            .content {
+                                background-color: white;
+                                color: $theme-gray-dark;
+
+                                .time {
+                                    color: $theme-light;
+                                }
+                            }
+                        }
+                    }
+
+                    &.you {
+                        .message {
+                            @include flex(flex-end, center);
+
+                            .Avatar {
+                                margin-right: 20px;
+                            }
+
+                            .content {
+                                background-color: $theme-orange;
+                                color: white;
+
+                                .time {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .chat-input {
+                position: absolute;
+                margin-left: 10%;
+                margin-right: 10%;
+                left: 0;
+                right: 0;
+                bottom: 60px;
+                @include flex(space-between, center);
+
+                input {
+                    flex: 1;
+                    padding: 5px 10px;
+                    margin-right: 10px;
+                    background-color: white;
+                    border-radius: 3px;
+                    align-self: stretch;
+                    border: 0;
+                    color: $theme-gray-dark;
+                    outline: 0;
+                    @include font(14px);
+                    @include blurry-shadow;
+                }
+            }
+        }
+    }
+}

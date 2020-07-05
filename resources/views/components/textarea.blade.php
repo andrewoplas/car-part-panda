@@ -1,0 +1,1 @@
+<textarea class="Textarea {{$class }}" placeholder="{{$placeholder}}" rows="{{$rows}}">{{$value}}</textarea>

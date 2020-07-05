@@ -1,0 +1,12 @@
+.Input {
+    padding: 7px 15px;
+    border: 1px solid $theme-lines;
+    border-radius: 3px;
+    color: $theme-gray;
+    @include font(16px);
+
+    &.block {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,216 @@
+.Home {
+    .landing {
+        height: 550px;
+        background: linear-gradient(180deg, rgba(58, 64, 71, 0.41) 29.53%, rgba(58, 64, 71, 0.78) 71.88%), url(/images/home-background.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-down(sm) {
+            height: 480px;
+            background-position: center;
+        }
+
+        @include media-breakpoint-down(xs) {
+            height: 400px;
+        }
+
+        .main-content {
+            @include flex(center, flex-start, column);
+
+            @include media-breakpoint-down(sm) {
+                align-items: center;
+            }
+
+            .header {
+                color: white;
+                line-height: 100%;
+                @include font(48px, bold);
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 36px;
+                }
+            }
+
+            .subheader {
+                color: white;
+                line-height: 140%;
+                @include font(22px, 600);
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 36px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+
+            .divider {
+                width: 57px;
+                height: 30px;
+                margin-top: 8px;
+                background: $theme-light;
+            }
+
+            .store-container {
+                display: none;
+                margin-top: 30px;
+
+                img {
+                    width: 128px;
+                    height: 43px;
+                    margin: 0 4px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    @include flex(center, center);
+                }
+            }
+
+            button {
+                margin-top: 48px;
+                @include font(16px, 600);
+
+                @include media-breakpoint-down(sm) {
+                    width: 260px;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+
+    .second-row {
+        background-color: white;
+        @include blurry-shadow;
+
+        .category-list {
+            padding: 65px 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            @include media-breakpoint-down(sm) {
+                padding: 40px 0;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-gap: 50px;
+            }
+
+            .header {
+                @include font(14px, 800);
+                margin-bottom: 30px;
+                color: $theme-gray;
+            }
+
+            .item {
+                @include font(16px);
+                color: $theme-gray;
+
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+
+            .show-all {
+                @include font(16px);
+                margin-top: 40px;
+                display: block;
+                color: $theme-light;
+            }
+        }
+    }
+
+    .third-row {
+        padding: 80px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 40px 0;
+        }
+
+        .header {
+            text-align: center;
+            color: $theme-gray-dark;
+            @include font(24px, bold);
+        }
+
+        .subheader {
+            color: $theme-gray;
+            text-align: center;
+            margin-top: 12px;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 16px;
+            }
+        }
+
+        .list {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+
+            @include media-breakpoint-down(md) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 36px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .list-dots {
+            margin-top: 13px;
+            display: none;
+
+            @include media-breakpoint-down(xs) {
+                @include flex(center, center);
+            }
+
+            .circle {
+                font-size: 16px;
+                margin: 0 4px;
+                color: $theme-gray-light;
+
+                &.current {
+                    color: $theme-orange;
+                }
+            }
+        }
+
+        .download-app {
+            margin-top: 65px;
+            padding: 55px 50px;
+            background-color: white;
+            border-radius: 5px;
+            @include simple-shadow;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 21px;
+                padding: 35px 25px;
+            }
+
+            .store-container {
+                margin-top: 35px;
+                @include flex(center, center);
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 25px;
+                }
+
+                img {
+                    width: 140px;
+                    height: 47px;
+                    margin: 0 4px;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 128px;
+                        height: 43px;
+                    }
+                }
+            }
+        }
+    }
+}

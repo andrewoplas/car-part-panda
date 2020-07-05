@@ -1,0 +1,377 @@
+.Detail {
+    & > .container.vertical-space {
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 80px;
+        }
+    }
+
+    .header {
+        @include flex(space-between, center);
+
+        &.mobile {
+            margin-top: 35px;
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+
+        .button-controls {
+            @include flex(stretch, center);
+
+            .item:first-child {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .main-details {
+        padding: 50px;
+        margin-top: 30px;
+        background-color: white;
+        @include blurry-shadow;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 25px 25px 40px;
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+
+        .left {
+            .title {
+                @include font(32px, 800);
+                color: $theme-gray-dark;
+                line-height: 100%;
+            }
+
+            .year {
+                @include font(32px, 600);
+                color: $theme-gray;
+                line-height: 100%;
+            }
+
+            .price {
+                @include font(32px, 800);
+                color: $theme-orange;
+                line-height: 100%;
+            }
+
+            .main-image {
+                margin-top: 27px;
+                width: 100%;
+                height: 370px;
+                background-image: url(/images/wheel-thumbnail.png);
+                background-position: center;
+                background-size: cover;
+                border-radius: 5px;
+            }
+
+            .thumbnails {
+                margin-top: 17px;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 15px;
+
+                @include media-breakpoint-down(xs) {
+                    grid-gap: 8px;
+                }
+
+                .item {
+                    width: 100%;
+                    height: 70px;
+                    background-image: url(/images/wheel-thumbnail.png);
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 5px;
+
+                    @include media-breakpoint-down(xs) {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        .right {
+            .button-controls {
+                @include flex(flex-end, center);
+
+                .item:first-child {
+                    margin-right: 8px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    @include flex(center, center);
+
+                    .item {
+                        flex: 1;
+                    }
+                }
+            }
+
+            .block-placeholder {
+                margin-top: 30px;
+                width: 100%;
+                height: 264px;
+
+                @include media-breakpoint-down(sm) {
+                    height: 85px;
+                }
+            }
+
+            .contact {
+                margin-top: 30px;
+
+                .user-information {
+                    @include flex(flex-start, center);
+
+                    .Avatar {
+                        margin-right: 20px;
+                    }
+
+                    .group {
+                        .name {
+                            @include font(16px, bold);
+                            color: $theme-gray;
+                        }
+
+                        .address {
+                            @include font(16px);
+                            color: $theme-gray;
+                        }
+                    }
+
+                    .btn-contact {
+                        margin-left: auto;
+                        font-weight: bold;
+
+                        &.small {
+                            display: none;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            &.full {
+                                display: none;
+                            }
+
+                            &.small {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .product-information {
+                    margin-top: 30px;
+
+                    .item {
+                        @include flex(flex-start, center);
+
+                        &:not(:last-child) {
+                            margin-bottom: 12px;
+                        }
+
+                        .icon {
+                            margin-right: 15px;
+                        }
+
+                        .value {
+                            @include font(18px, bold);
+                            color: $theme-gray-dark;
+
+                            .alt {
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+                .status {
+                    margin-top: 30px;
+                    color: $theme-gray;
+                    @include font(14px);
+                }
+            }
+        }
+    }
+
+    .other-details {
+        margin-top: 68px;
+        display: grid;
+        grid-template-columns: 0.65fr 0.35fr;
+        grid-gap: 20px;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 0.55fr 0.45fr;
+        }
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 35px;
+            margin-top: 40px;
+        }
+
+        .left {
+            .details {
+                margin-bottom: 45px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 35px;
+                }
+
+                .content {
+                    margin-top: 35px;
+
+                    @include media-breakpoint-down(sm) {
+                        margin-top: 25px;
+                    }
+
+                    &.column {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 20px;
+
+                        @include media-breakpoint-down(md) {
+                            grid-template-columns: 1fr;
+                        }
+
+                        .item {
+                            @include flex(space-between, center);
+
+                            .label {
+                                @include font(16px);
+                                color: $theme-gray;
+                            }
+
+                            .value {
+                                @include font(16px, bold);
+                                color: $theme-gray-dark;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .block-placeholder {
+                height: 120px;
+                width: 100%;
+                margin-bottom: 45px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 35px;
+                }
+            }
+
+            .user-location {
+                @include blurry-shadow;
+
+                .header {
+                    background-color: white;
+                    padding: 35px;
+
+                    @include media-breakpoint-down(xs) {
+                        padding: 25px;
+                    }
+
+                    .user-information {
+                        width: 100%;
+                        @include flex(flex-start, center);
+
+                        @include media-breakpoint-down(xs) {
+                            flex-direction: column;
+                        }
+
+                        .Avatar {
+                            margin-right: 20px;
+
+                            @include media-breakpoint-down(xs) {
+                                margin: 0;
+                                width: 80px;
+                                height: 80px;
+                            }
+                        }
+
+                        .group {
+                            @include media-breakpoint-down(xs) {
+                                margin-top: 20px;
+                                text-align: center;
+                            }
+
+                            .name {
+                                @include font(16px, bold);
+                                color: $theme-gray;
+                            }
+
+                            .address {
+                                margin-top: 5px;
+                                @include font(16px);
+                                color: $theme-gray;
+                            }
+                        }
+
+                        .btn-contact {
+                            margin-left: auto;
+                            font-weight: bold;
+                            @include media-breakpoint-down(xs) {
+                                display: none;
+                            }
+                        }
+
+                        .button-controls {
+                            width: 100%;
+                            margin-top: 25px;
+                            display: none;
+
+                            @include media-breakpoint-down(xs) {
+                                display: block;
+                            }
+
+                            .item:last-child {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    width: 100%;
+                    height: 300px;
+                    background-image: url(/images/map.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+
+        }
+
+        .right {
+            .list {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-row-gap: 15px;
+            }
+
+            .Back {
+                margin-top: 30px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .block-placeholder {
+                width: 216px;
+                height: 600px;
+                margin: 45px auto 0;
+            }
+        }
+    }
+}

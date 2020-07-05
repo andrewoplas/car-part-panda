@@ -1,0 +1,46 @@
+.Pagination {
+    margin-top: 50px;
+    @include flex(space-between, center);
+
+    .pages {
+        height: 46px;
+        background-color: white;
+        border-radius: 5px;
+        @include flex(center, center);
+        @include simple-shadow;
+
+        @include media-breakpoint-down(sm) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+
+        .item {
+            width: 46px;
+            height: 100%;
+            color: $theme-gray;
+            @include font(16px, 600);
+            @include flex(center, center);
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+                width: auto;
+            }
+
+            &.mobile {
+                display: none;
+
+                @include media-breakpoint-down(sm) {
+                    @include flex(center, center);
+                }
+            }
+
+            &.active {
+                color: white;
+                background-color: $theme-orange;
+                box-shadow: 1px 1px 16px rgba(255, 184, 0, 0.4);
+                border-radius: 5px;
+            }
+        }
+    }
+}

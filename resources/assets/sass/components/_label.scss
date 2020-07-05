@@ -1,0 +1,10 @@
+.Label {
+    color: $theme-gray;
+    display: block;
+    letter-spacing: 0.1em;
+    @include font(12px, 800);
+
+    &.header {
+        font-size: 14px;
+    }
+}

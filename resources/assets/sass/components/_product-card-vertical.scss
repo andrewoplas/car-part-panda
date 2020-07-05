@@ -1,0 +1,82 @@
+.ProductCardVertical {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    @include simple-shadow;
+
+    @include media-breakpoint-down(xs) {
+        &.hide-on-mobile {
+            display: none;
+        }
+    }
+
+    img {
+        width: 100%;
+        flex-shrink: 0;
+        border-radius: 5px;
+    }
+
+    .information {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+
+        .title {
+            color: $theme-gray;
+            @include font(16px, bold);
+
+            .year {
+                font-weight: 400;
+            }
+        }
+
+        .price {
+            color: $theme-orange;
+            @include font(16px, bold);
+        }
+
+        .kilometers {
+            color: $theme-gray;
+            @include font(14px);
+        }
+
+        .location-star {
+            margin-top: 5px;
+
+            @include flex(space-between, center);
+
+            .location {
+                color: $theme-light;
+                @include font(12px);
+            }
+
+            .star-icon {
+                flex-shrink: 0;
+                color: $theme-light;
+                font-size: 18px;
+            }
+
+        }
+
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                @include font(14px, bold);
+            }
+
+            .price {
+                @include font(14px, bold);
+            }
+
+            .kilometers {
+                @include font(12px);
+            }
+
+            .location {
+                @include font(12px);
+            }
+        }
+    }
+
+}

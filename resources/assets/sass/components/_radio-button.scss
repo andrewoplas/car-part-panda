@@ -1,0 +1,51 @@
+.RadioButton {
+    padding: 4px 0;
+
+    &[disabled],
+    &.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+    label {
+        @include flex(stretch, center);
+        margin: 0;
+        color: $theme-gray;
+        cursor: pointer;
+        @include font(14px);
+    }
+
+    /* completely hiding radio button */
+    input[type="radio"] {
+        display: none;
+    }
+
+    /* simulate radiobutton appearance using pseudoselector */
+    input[type="radio"] + label:before {
+        content: "";
+        /* create custom radiobutton appearance */
+        @include flex(center, center);
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        /* background-color only for content */
+        background-clip: content-box;
+        background-color: white;
+        border: 1px solid $theme-gray-light;
+        border-radius: 50%;
+        line-height: 0;
+    }
+
+    /* appearance of checked radiobutton */
+    input[type="radio"]:checked + label:before {
+        content: "";
+        background-color: $theme-orange;
+        border-color: $theme-orange;
+    }
+
+    /* optional styles for centering radio buttons */
+    .sound-signal label {
+        display: inline-flex;
+        align-items: center;
+    }
+}

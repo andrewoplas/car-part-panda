@@ -1,0 +1,1 @@
+<span class="Label {{$class ?? ''}}">{{$title}}</span>

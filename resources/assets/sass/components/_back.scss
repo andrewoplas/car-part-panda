@@ -1,0 +1,14 @@
+.Back {
+    color: $theme-gray;
+    @include flex(flex-start, center);
+
+    .icon {
+        margin-right: 8px;
+        margin-top: 3px;
+        font-size: 12px;
+    }
+
+    .title {
+        @include font(14px, bold);
+    }
+}

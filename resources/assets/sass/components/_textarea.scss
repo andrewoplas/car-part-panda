@@ -1,0 +1,12 @@
+.Textarea {
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px solid $theme-lines;
+    color: $theme-gray-dark;
+    @include font(16px);
+    line-height: 130%;
+
+    @include media-breakpoint-down(sm) {
+        padding: 15px;
+    }
+}
