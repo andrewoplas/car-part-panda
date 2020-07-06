@@ -11,6 +11,11 @@
         margin-bottom: 60px;
         color: $theme-gray-dark;
         @include font(32px, 800);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
     }
 
     .form {
