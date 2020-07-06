@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14ad01cb-0d57-49cd-b1c6-da65723e3eba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/sass/pages/_settings-favorieten.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings-favorieten.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/sass/pages/_settings-biedingen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings-biedingen.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_product-card-vertical.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/components/_product-card-vertical.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/settings-favorieten.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/settings-favorieten.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/settings-zoekertjes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/settings-zoekertjes.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +152,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/assets/sass/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -159,8 +160,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/assets/sass/pages" />
       <recent name="$PROJECT_DIR$/resources/views/pages" />
+      <recent name="$PROJECT_DIR$/resources/assets/sass/pages" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/resources/assets/sass/layout" />
       <recent name="$PROJECT_DIR$/resources/views/modals" />
@@ -191,7 +192,7 @@
       <workItem from="1593742251826" duration="114000" />
       <workItem from="1593745468753" duration="8388000" />
       <workItem from="1593935150977" duration="26553000" />
-      <workItem from="1593996300179" duration="26951000" />
+      <workItem from="1593996300179" duration="27348000" />
     </task>
     <servers />
   </component>
@@ -223,6 +224,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="482" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877@0.23.1440.877" timestamp="1593954164436" />
+    <state x="368" y="116" key="#phpunit.xml" timestamp="1594040025785">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="368" y="116" key="#phpunit.xml/0.23.1440.877@0.23.1440.877" timestamp="1594040025785" />
     <state x="477" y="330" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1593752706299">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -251,18 +256,18 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="375" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877@0.23.1440.877" timestamp="1593717495165" />
-    <state x="345" y="164" width="837" height="550" key="find.popup" timestamp="1594038339214">
+    <state x="345" y="164" width="876" height="550" key="find.popup" timestamp="1594040111343">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="345" y="164" width="837" height="550" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1594038339214" />
+    <state x="345" y="164" width="876" height="550" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1594040111343" />
     <state x="319" y="126" key="scopes" timestamp="1593996887096">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="319" y="126" key="scopes/0.23.1440.877@0.23.1440.877" timestamp="1593996887096" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1594039801048">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1594040187709">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1594039801048" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1594040187709" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

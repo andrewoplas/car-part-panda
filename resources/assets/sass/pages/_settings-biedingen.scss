@@ -1,0 +1,44 @@
+.SettingsBiedingen {
+    .page-title {
+        margin-bottom: 60px;
+        color: $theme-gray-dark;
+        @include font(32px, 800);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
+
+        &.mobile {
+            display: none;
+
+            @include media-breakpoint-down(xs) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+            }
+        }
+    }
+
+    .pagination {
+        margin-top: 60px;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 25px;
+        }
+    }
+}

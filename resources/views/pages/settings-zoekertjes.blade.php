@@ -13,7 +13,7 @@
                         price="25.000"
                         year="2016"
                         bid="Geen biedingen"
-                        isBidding
+                        bidding
                 ></x-product-card-vertical>
             @endfor
         </div>
@@ -28,7 +28,7 @@
                         kilometers="30.000"
                         year="2016"
                         bid="Geen biedingen"
-                        isBidding
+                        bidding
                 ></x-product-card-horizontal>
             @endfor
         </div>
