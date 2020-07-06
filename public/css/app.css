@@ -676,7 +676,7 @@ p {
   flex-direction: row;
 }
 .ProductCardVertical .information .location-star .location {
-  color: #c4c6ca;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -3076,6 +3076,54 @@ body.chat-body #main {
 }
 @media (max-width: 767.98px) {
   .SettingsZoekertjes .pagination {
+    margin-top: 25px;
+  }
+}
+
+.SettingsFavorieten .page-title {
+  margin-bottom: 60px;
+  color: #3a4047;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+}
+@media (max-width: 767.98px) {
+  .SettingsFavorieten .page-title {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+}
+.SettingsFavorieten .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+@media (max-width: 991.98px) {
+  .SettingsFavorieten .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575.98px) {
+  .SettingsFavorieten .list {
+    display: none;
+  }
+}
+.SettingsFavorieten .list.mobile {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .SettingsFavorieten .list.mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+.SettingsFavorieten .pagination {
+  margin-top: 60px;
+}
+@media (max-width: 767.98px) {
+  .SettingsFavorieten .pagination {
     margin-top: 25px;
   }
 }

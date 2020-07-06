@@ -55,7 +55,7 @@
             @include flex(space-between, center);
 
             .location {
-                color: $theme-light;
+                color: $theme-gray;
                 @include font(14px);
             }
 
