@@ -79,6 +79,15 @@ p {
   line-height: 130%;
 }
 
+.text-gray {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: #67707e;
+  line-height: 130%;
+}
+
 .Header {
   width: 100%;
   height: 76px;
@@ -138,6 +147,9 @@ p {
   right: 0;
   margin: auto;
   background-color: #ffb41c;
+}
+.Header .left .logo img {
+  width: 150px;
 }
 .Header .right {
   display: flex;
@@ -230,6 +242,9 @@ p {
     text-align: center;
   }
 }
+.Footer .grid .logo-container .logo img {
+  width: 150px;
+}
 .Footer .grid .logo-container .copyright {
   display: block;
   color: white;
@@ -243,7 +258,7 @@ p {
 }
 
 .Button {
-  padding: 12px 18px;
+  padding: 13px 18px;
   color: white;
   text-align: center;
   background: linear-gradient(180deg, #ffb41c 0%, #ffa41c 100%);
@@ -272,7 +287,12 @@ p {
   line-height: 100%;
 }
 .Button.large {
-  padding: 15px 25px;
+  padding: 17px 25px;
+}
+@media (max-width: 575.98px) {
+  .Button.large {
+    padding: 13px 18px;
+  }
 }
 .Button.white {
   border: 1px solid white;
@@ -287,7 +307,7 @@ p {
   padding: 11px 18px;
 }
 .Button.outline.large {
-  padding: 14px 25px;
+  padding: 16px 25px;
 }
 .Button.green {
   background: #69a752;
@@ -299,7 +319,7 @@ p {
   color: #69a752;
 }
 .Button.green.outline.large {
-  padding: 14px 25px;
+  padding: 16px 25px;
 }
 .Button.icon i {
   margin-right: 5px;
@@ -1129,7 +1149,7 @@ p {
   display: block;
   margin-bottom: 15px;
 }
-.Browse .filter .filter-item.checkbox, .Browse .filter .filter-item.checkbox {
+.Browse .filter .filter-item.checkbox {
   margin-top: 15px;
 }
 .Browse .filter .filter-item .Label {
@@ -1252,7 +1272,7 @@ p {
 }
 @media (max-width: 575.98px) {
   .Browse .main-content .results .list {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 5px;
     display: none;
   }
@@ -1263,7 +1283,7 @@ p {
 @media (max-width: 575.98px) {
   .Browse .main-content .results .list.mobile {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 8px;
   }
 }
@@ -1914,7 +1934,7 @@ p {
   margin-right: 8px;
 }
 
-body {
+body.chat-body {
   height: 100vh;
   display: flex;
   align-items: stretch;
@@ -1922,7 +1942,7 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-body #main {
+body.chat-body #main {
   flex: 1;
 }
 
@@ -2193,6 +2213,156 @@ body #main {
   .Chat.mobile .conversation {
     display: none;
   }
+}
+
+@media (max-width: 767.98px) {
+  body.signup-body .Footer {
+    display: none;
+  }
+}
+
+.Signup div.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+@media (max-width: 767.98px) {
+  .Signup div.header {
+    display: none;
+  }
+}
+.Signup div.header .logo {
+  width: 150px;
+}
+.Signup .main-content {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 767.98px) {
+  .Signup .main-content {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+.Signup .main-content .information {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+.Signup .main-content .information .panda {
+  width: 100px;
+}
+.Signup .main-content .information .header {
+  margin-top: 25px;
+  color: #3a4047;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 100%;
+}
+@media (max-width: 991.98px) {
+  .Signup .main-content .information .header {
+    font-size: 36px;
+  }
+}
+.Signup .main-content .information .subheader {
+  margin-top: 30px;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  line-height: 140%;
+}
+@media (max-width: 991.98px) {
+  .Signup .main-content .information .subheader {
+    font-size: 18px;
+  }
+}
+.Signup .main-content .information .circles {
+  margin-top: 60px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-direction: row;
+}
+@media (max-width: 991.98px) {
+  .Signup .main-content .information .circles {
+    margin-top: 30px;
+  }
+}
+.Signup .main-content .information .circles .item {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #d5d9de;
+}
+.Signup .main-content .form {
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 767.98px) {
+  .Signup .main-content .form {
+    padding: 25px;
+  }
+}
+.Signup .main-content .form .item {
+  margin-bottom: 20px;
+}
+.Signup .main-content .form .item .Label {
+  margin-bottom: 10px;
+}
+.Signup .main-content .form .information {
+  text-align: center;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  line-height: 130%;
+}
+.Signup .main-content .form .divider {
+  height: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.Signup .main-content .form .divider hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e3e5e8 !important;
+}
+.Signup .main-content .form .divider .text {
+  width: 50px;
+  position: absolute;
+  display: block;
+  background-color: white;
+  text-align: center;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  line-height: 140%;
+}
+.Signup .main-content .form .btn-register {
+  margin-top: 30px;
+}
+.Signup .main-content .form .btn-facebook {
+  background: #3b5998;
 }
 
 body {

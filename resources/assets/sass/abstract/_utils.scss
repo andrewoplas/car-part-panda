@@ -54,3 +54,9 @@
     color: $theme-gray-dark;
     line-height: 130%;
 }
+
+.text-gray {
+    @include font(16px, normal);
+    color: $theme-gray;
+    line-height: 130%;
+}

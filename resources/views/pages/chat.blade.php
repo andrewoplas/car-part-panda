@@ -1,4 +1,4 @@
-@extends('layouts.default', ['hideFooter' => true])
+@extends('layouts.default', ['body' => 'chat-body','hideFooter' => true])
 
 @section('content')
     <div class="Chat mobile">

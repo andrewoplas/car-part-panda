@@ -1,5 +1,5 @@
 .Button {
-    padding: 12px 18px;
+    padding: 13px 18px;
     color: white;
     text-align: center;
     background: linear-gradient(180deg, #ffb41c 0%, $theme-orange-darker 100%);
@@ -25,7 +25,11 @@
     }
 
     &.large {
-        padding: 15px 25px;
+        padding: 17px 25px;
+
+        @include media-breakpoint-down(xs) {
+            padding: 13px 18px;
+        }
     }
 
     &.white {
@@ -42,7 +46,7 @@
         padding: 11px 18px;
 
         &.large {
-            padding: 14px 25px;
+            padding: 16px 25px;
         }
     }
 
@@ -56,7 +60,7 @@
             color: $theme-green;
 
             &.large {
-                padding: 14px 25px;
+                padding: 16px 25px;
             }
         }
     }

@@ -1,0 +1,138 @@
+body.signup-body .Footer {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.Signup {
+    div.header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include flex(space-between, center);
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        .logo {
+            width: 150px;
+        }
+    }
+
+    .main-content {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+
+        .information {
+            @include flex(center, stretch, column);
+
+            .panda {
+                width: 100px;
+            }
+
+            .header {
+                margin-top: 25px;
+                color: $theme-gray-dark;
+                @include font(48px, bold);
+
+                @include media-breakpoint-down(md) {
+                    font-size: 36px;
+                }
+            }
+
+            .subheader {
+                margin-top: 30px;
+                color: $theme-gray;
+                @include font(22px, 600);
+                line-height: 140%;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 18px;
+                }
+            }
+
+            .circles {
+                margin-top: 60px;
+                @include flex(stretch, stretch);
+
+                @include media-breakpoint-down(md) {
+                    margin-top: 30px;
+                }
+
+                .item {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                    background-color: $theme-gray-light;
+                }
+            }
+        }
+
+        .form {
+            padding: 50px;
+            background-color: white;
+            @include blurry-shadow;
+
+            @include media-breakpoint-down(sm) {
+                padding: 25px;
+            }
+
+            .item {
+                margin-bottom: 20px;
+
+                .Label {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .information {
+                text-align: center;
+                color: $theme-gray;
+                @include font(12px);
+                line-height: 130%;
+            }
+
+            .divider {
+                height: 22px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @include flex(center, center);
+
+                hr {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 1px solid $theme-lines !important;
+                }
+
+                .text {
+                    width: 50px;
+                    position: absolute;
+                    display: block;
+                    background-color: white;
+                    text-align: center;
+                    color: $theme-gray;
+                    @include font(22px, 600);
+                    line-height: 140%;
+                }
+            }
+
+            .btn-register {
+                margin-top: 30px;
+            }
+
+            .btn-facebook {
+                background: $theme-facebook;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-body {
+body.chat-body {
     height: 100vh;
     @include flex(stretch, stretch, column);
     overflow: hidden;

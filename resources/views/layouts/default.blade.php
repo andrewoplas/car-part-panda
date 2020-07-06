@@ -7,7 +7,9 @@
 
 <body class="{{ $body ?? '' }}">
 
-@include('includes.header')
+@if(!($hideHeader ?? null))
+    @include('includes.header')
+@endif
 
 <div id="main">
     @yield('content')

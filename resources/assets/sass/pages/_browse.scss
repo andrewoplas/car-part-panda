@@ -27,7 +27,6 @@
             display: block;
             margin-bottom: 15px;
 
-            &.checkbox,
             &.checkbox {
                 margin-top: 15px;
             }
@@ -136,7 +135,7 @@
                 }
 
                 @include media-breakpoint-down(xs) {
-                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-columns: 1fr;
                     grid-gap: 5px;
                     display: none;
                 }
@@ -146,7 +145,7 @@
 
                     @include media-breakpoint-down(xs) {
                         display: grid;
-                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-columns: 1fr;
                         grid-gap: 8px;
                     }
                 }

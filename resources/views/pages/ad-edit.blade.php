@@ -143,8 +143,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="details">
                     <span class="Label header">OMSCHRIJVING</span>
                     <div class="content">
