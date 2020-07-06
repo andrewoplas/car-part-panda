@@ -612,6 +612,34 @@ body.white {
   margin-bottom: 8px;
 }
 
+.label-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.label-value .value {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  color: #67707e;
+}
+.label-value.badge .value {
+  padding: 6px 10px;
+  background-color: #ffb41c;
+  border-radius: 3px;
+  color: white;
+  letter-spacing: 0.1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+}
+.label-value.space-bottom {
+  margin-bottom: 8px;
+}
+
 .ProductCardHorizontal {
   padding: 15px;
   background-color: white;
@@ -1678,19 +1706,6 @@ body.white {
 }
 .Browse .filter .filter-item.checkbox {
   margin-top: 15px;
-}
-.Browse .filter .filter-item .label-value {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.Browse .filter .filter-item .label-value .value {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 100%;
-  color: #67707e;
 }
 .Browse .filter .filter-item .group {
   margin-top: 15px;

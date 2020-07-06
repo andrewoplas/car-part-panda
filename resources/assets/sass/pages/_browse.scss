@@ -29,15 +29,6 @@
                 margin-top: 15px;
             }
 
-            .label-value {
-                @include flex(space-between, center);
-
-                .value {
-                    @include font(12px);
-                    color: $theme-gray;
-                }
-            }
-
             .group {
                 margin-top: 15px;
             }

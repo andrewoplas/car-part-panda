@@ -50,29 +50,17 @@
             </div>
 
             <div class="filter-item">
-                <div class="label-value">
-                    <x-label class="space-bottom" title="PRIJS"></x-label>
-                    <span class="value">Vanaf € 17.500</span>
-                </div>
-
+                <x-label class="space-bottom" title="PRIJS" value="Vanaf € 17.500"></x-label>
                 <x-range value="0"></x-range>
             </div>
 
             <div class="filter-item">
-                <div class="label-value">
-                    <x-label class="space-bottom" title="BOUWJAAR"></x-label>
-                    <span class="value">Alles</span>
-                </div>
-
+                <x-label class="space-bottom" title="BOUWJAAR" value="Alles"></x-label>
                 <x-range value="0"></x-range>
             </div>
 
             <div class="filter-item">
-                <div class="label-value">
-                    <x-label class="space-bottom" title="KILOMETERSTAND"></x-label>
-                    <span class="value">Alles</span>
-                </div>
-
+                <x-label class="space-bottom" title="KILOMETERSTAND" value="Alles"></x-label>
                 <x-range value="0"></x-range>
             </div>
 

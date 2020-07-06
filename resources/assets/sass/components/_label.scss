@@ -12,3 +12,27 @@
         margin-bottom: 8px;
     }
 }
+
+.label-value {
+    @include flex(space-between, center);
+
+    .value {
+        @include font(12px);
+        color: $theme-gray;
+    }
+
+    &.badge {
+        .value {
+            padding: 6px 10px;
+            background-color: $theme-orange;
+            border-radius: 3px;
+            color: white;
+            letter-spacing: 0.1em;
+            @include font(12px, bold);
+        }
+    }
+
+    &.space-bottom {
+        margin-bottom: 8px;
+    }
+}
