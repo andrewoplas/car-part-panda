@@ -1,12 +1,12 @@
 @extends('layouts.default', ['body' => 'white'])
 
 @section('content')
-    <div class="SettingsChangeProfile">
+    <div class="SettingsChangePassword">
         <div class="container vertical-space">
             <x-breadcrumbs
                     :links="[
                         ['name' => 'Account', 'href' => '/profile'],
-                        ['name' => 'Wijzig profiel', 'href' => '#', 'is_current' => true]
+                        ['name' => 'Wachtwoord', 'href' => '#', 'is_current' => true]
                     ]"
             ></x-breadcrumbs>
 
@@ -22,40 +22,28 @@
                     </div>
 
                     <div class="links space-2">
-                        <a href="#" class="item active">Wijzig profiel</a>
-                        <a href="#" class="item">Wachtwoord</a>
+                        <a href="#" class="item">Wijzig profiel</a>
+                        <a href="#" class="item active">Wachtwoord</a>
                         <a href="#" class="item">Voorkeuren</a>
                         <a href="#" class="item disabled">Afmelden</a>
                     </div>
                 </div>
 
                 <div class="content">
-                    <h3 class="page-title">Wijzig profiel</h3>
+                    <h3 class="page-title">Wachtwoord wijzigen</h3>
 
                     <div class="form">
                         <div class="item">
-                            <x-label class="space-bottom" title="VOORNAAM"></x-label>
+                            <x-label class="space-bottom" title="NIEUW WACHTWOORD"></x-label>
                             <x-input class="block"></x-input>
                         </div>
                         <div class="item">
-                            <x-label class="space-bottom" title="FAMILIENAAM"></x-label>
-                            <x-input class="block"></x-input>
-                        </div>
-                        <div class="item gebruikersnaam">
-                            <x-label class="space-bottom" title="GEBRUIKERSNAAM"></x-label>
-                            <x-input class="block"></x-input>
-                        </div>
-                        <div class="item">
-                            <x-label class="space-bottom" title="WOONPLAATS"></x-label>
-                            <x-input class="block"></x-input>
-                        </div>
-                        <div class="item">
-                            <x-label class="space-bottom" title="LAND"></x-label>
+                            <x-label class="space-bottom" title="HERHAAL NIEUW WACHTWOORD"></x-label>
                             <x-input class="block"></x-input>
                         </div>
                     </div>
 
-                    <x-button title="Bewaar profiel" class="large btn-submit"></x-button>
+                    <x-button title="Wijzig wachtwoord" class="large btn-submit"></x-button>
                 </div>
             </div>
         </div>

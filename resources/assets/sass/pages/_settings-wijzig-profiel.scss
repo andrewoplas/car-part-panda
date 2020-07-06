@@ -1,0 +1,43 @@
+.SettingsWijzigProfiel {
+    padding: 60px 70px;
+    background-color: white;
+    @include blurry-shadow;
+
+    @include media-breakpoint-down(sm) {
+        padding: 25px;
+    }
+
+    .page-title {
+        margin-bottom: 60px;
+        color: $theme-gray-dark;
+        @include font(32px, 800);
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+        grid-row-gap: 25px;
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+        }
+
+        .item.gebruikersnaam {
+            grid-column: 1 / span 2;
+
+            @include media-breakpoint-down(sm) {
+                grid-column: 1;
+            }
+        }
+    }
+
+    .btn-submit {
+        margin-top: 30px;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            display: block;
+        }
+    }
+}

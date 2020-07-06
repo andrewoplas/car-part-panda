@@ -8,6 +8,7 @@
 // Layouts
 @import "../assets/sass/layout/header";
 @import "../assets/sass/layout/footer";
+@import "../assets/sass/layout/settings";
 
 // Components
 @import "../assets/sass/components/button";
@@ -35,7 +36,7 @@
 @import "../assets/sass/pages/chat";
 @import "../assets/sass/pages/signup";
 @import "../assets/sass/pages/profile";
-@import "../assets/sass/pages/settings-change-profile";
+@import "../assets/sass/pages/settings-wijzig-profiel";
 
 body {
     background-color: $theme-extra-light;

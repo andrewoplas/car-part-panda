@@ -253,6 +253,52 @@ p {
   }
 }
 
+.SettingsLayout .main-content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-gap: 50px;
+}
+@media (max-width: 767.98px) {
+  .SettingsLayout .main-content {
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .SettingsLayout .main-content .sidebar {
+    display: none;
+  }
+}
+.SettingsLayout .main-content .sidebar .Avatar {
+  width: 80px;
+  height: 80px;
+}
+.SettingsLayout .main-content .sidebar .header-label {
+  margin-top: 20px;
+}
+.SettingsLayout .main-content .sidebar .links.space-1 {
+  margin-top: 30px;
+}
+.SettingsLayout .main-content .sidebar .links.space-2 {
+  margin-top: 70px;
+}
+.SettingsLayout .main-content .sidebar .links .item {
+  margin-bottom: 18px;
+  display: block;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+}
+.SettingsLayout .main-content .sidebar .links .item.active {
+  font-weight: bold;
+}
+.SettingsLayout .main-content .sidebar .links .item.disabled {
+  color: #c4c6ca;
+}
+
 .Button {
   padding: 13px 18px;
   position: relative;
@@ -2870,63 +2916,17 @@ body.chat-body #main {
   text-align: center;
 }
 
-.SettingsChangeProfile .main-content {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  grid-gap: 50px;
-}
-@media (max-width: 767.98px) {
-  .SettingsChangeProfile .main-content {
-    grid-template-columns: 1fr;
-    margin-top: 25px;
-  }
-}
-@media (max-width: 767.98px) {
-  .SettingsChangeProfile .main-content .sidebar {
-    display: none;
-  }
-}
-.SettingsChangeProfile .main-content .sidebar .Avatar {
-  width: 80px;
-  height: 80px;
-}
-.SettingsChangeProfile .main-content .sidebar .header-label {
-  margin-top: 20px;
-}
-.SettingsChangeProfile .main-content .sidebar .links.space-1 {
-  margin-top: 30px;
-}
-.SettingsChangeProfile .main-content .sidebar .links.space-2 {
-  margin-top: 70px;
-}
-.SettingsChangeProfile .main-content .sidebar .links .item {
-  margin-bottom: 18px;
-  display: block;
-  color: #67707e;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 100%;
-}
-.SettingsChangeProfile .main-content .sidebar .links .item.active {
-  font-weight: bold;
-}
-.SettingsChangeProfile .main-content .sidebar .links .item.disabled {
-  color: #c4c6ca;
-  pointer-events: none;
-}
-.SettingsChangeProfile .main-content .content {
+.SettingsWijzigProfiel {
   padding: 60px 70px;
   background-color: white;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
 }
 @media (max-width: 767.98px) {
-  .SettingsChangeProfile .main-content .content {
+  .SettingsWijzigProfiel {
     padding: 25px;
   }
 }
-.SettingsChangeProfile .main-content .content .page-title {
+.SettingsWijzigProfiel .page-title {
   margin-bottom: 60px;
   color: #3a4047;
   font-family: "Open Sans", sans-serif;
@@ -2934,30 +2934,30 @@ body.chat-body #main {
   font-size: 32px;
   line-height: 100%;
 }
-.SettingsChangeProfile .main-content .content .form {
+.SettingsWijzigProfiel .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 25px;
 }
 @media (max-width: 767.98px) {
-  .SettingsChangeProfile .main-content .content .form {
+  .SettingsWijzigProfiel .form {
     grid-template-columns: 1fr;
   }
 }
-.SettingsChangeProfile .main-content .content .form .item.gebruikersnaam {
+.SettingsWijzigProfiel .form .item.gebruikersnaam {
   grid-column: 1/span 2;
 }
 @media (max-width: 767.98px) {
-  .SettingsChangeProfile .main-content .content .form .item.gebruikersnaam {
+  .SettingsWijzigProfiel .form .item.gebruikersnaam {
     grid-column: 1;
   }
 }
-.SettingsChangeProfile .main-content .content .btn-submit {
+.SettingsWijzigProfiel .btn-submit {
   margin-top: 30px;
 }
 @media (max-width: 767.98px) {
-  .SettingsChangeProfile .main-content .content .btn-submit {
+  .SettingsWijzigProfiel .btn-submit {
     width: 100%;
     display: block;
   }

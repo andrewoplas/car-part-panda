@@ -26,12 +26,12 @@ Route::get('/profile', 'PageController@profile');
 
 // Settings
 Route::prefix('settings')->group(function () {
-    Route::get('/change-profile', 'PageController@settingsChangeProfile');
-    Route::get('/password', 'PageController@password');
-    Route::get('/voorkeuren', 'PageController@voorkeuren');
-    Route::get('/zoekertjes', 'PageController@zoekertjes');
-    Route::get('/favorieten', 'PageController@favorieten');
-    Route::get('/biedingen', 'PageController@biedingen');
+    Route::get('/wijzig-profiel', 'PageController@settingsWijzigProfiel');
+    Route::get('/wachtwoord', 'PageController@settingsWachtwoord');
+    Route::get('/voorkeuren', 'PageController@settingsVoorkeuren');
+    Route::get('/zoekertjes', 'PageController@settingsZoekertjes');
+    Route::get('/favorieten', 'PageController@settingsFavorieten');
+    Route::get('/biedingen', 'PageController@settingsBiedingen');
 });
 
 // Modals

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Support\Facades\Route;
+
 class PageController extends Controller
 {
     public function home()
@@ -49,8 +52,8 @@ class PageController extends Controller
         return view('pages.profile');
     }
 
-    public function settingsChangeProfile()
+    public function settingsWijzigProfiel()
     {
-        return view('pages.settings-change-profile');
+        return view('pages.settings-wijzig-profiel', ['uri' => Route::getCurrentRoute()->uri()]);
     }
 }

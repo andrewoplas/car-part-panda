@@ -1,0 +1,53 @@
+.SettingsLayout {
+    .main-content {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        grid-gap: 50px;
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+            margin-top: 25px;
+        }
+
+        .sidebar {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+
+            .Avatar {
+                width: 80px;
+                height: 80px;
+            }
+
+            .header-label {
+                margin-top: 20px;
+            }
+
+            .links {
+                &.space-1 {
+                    margin-top: 30px;
+                }
+
+                &.space-2 {
+                    margin-top: 70px;
+                }
+
+                .item {
+                    margin-bottom: 18px;
+                    display: block;
+                    color: $theme-gray;
+                    @include font(16px);
+
+                    &.active {
+                        font-weight: bold;
+                    }
+
+                    &.disabled {
+                        color: $theme-light;
+                    }
+                }
+            }
+        }
+    }
+}
