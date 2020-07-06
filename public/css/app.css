@@ -300,28 +300,48 @@ p {
 }
 
 .CreateLayout {
-  max-width: 770px;
-  margin: auto;
+  min-height: calc(100vh - 76px - 254px);
+  padding: 50px 25px 100px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.CreateLayout .main-content {
+@media (max-width: 767.98px) {
+  .CreateLayout {
+    min-height: auto;
+    padding: 25px 25px 35px 25px;
+  }
+}
+.CreateLayout .wrapper {
+  max-width: 770px;
+}
+.CreateLayout .wrapper .main-content {
   padding: 50px 95px;
   margin-top: 30px;
   background-color: white;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
 }
-.CreateLayout .main-content .create-title {
+@media (max-width: 767.98px) {
+  .CreateLayout .wrapper .main-content {
+    padding: 40px 25px;
+    margin-top: 25px;
+  }
+}
+.CreateLayout .wrapper .main-content .create-title {
   margin-bottom: 45px;
+  text-align: center;
   color: #3a4047;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 100%;
 }
-.CreateLayout .main-content .create-title .alt {
+.CreateLayout .wrapper .main-content .create-title .alt {
   color: #ffb41c;
 }
 @media (max-width: 767.98px) {
-  .CreateLayout .main-content .create-title {
+  .CreateLayout .wrapper .main-content .create-title {
     margin-bottom: 30px;
     font-family: "Open Sans", sans-serif;
     font-weight: 800;
@@ -329,14 +349,25 @@ p {
     line-height: 100%;
   }
 }
-.CreateLayout .main-content .normal-spacing {
+.CreateLayout .wrapper .main-content .btn-submit {
+  min-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .CreateLayout .wrapper .main-content .btn-submit {
+    width: 100%;
+  }
+}
+.CreateLayout .wrapper .main-content .normal-spacing {
   margin-bottom: 20px;
 }
-.CreateLayout .main-content .large-spacing {
+.CreateLayout .wrapper .main-content .large-spacing {
   margin-bottom: 40px;
 }
 @media (max-width: 767.98px) {
-  .CreateLayout .main-content .large-spacing {
+  .CreateLayout .wrapper .main-content .large-spacing {
     margin-bottom: 20px;
   }
 }

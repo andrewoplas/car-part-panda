@@ -1,37 +1,67 @@
+$headerHeight: 76px;
+$footerHeight: 254px;
+
 .CreateLayout {
-    max-width: 770px;
-    margin: auto;
+    min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+    padding: 50px 25px 100px 25px;
+    @include flex(center, center, column);
 
-    .main-content {
-        padding: 50px 95px;
-        margin-top: 30px;
-        background-color: white;
-        @include blurry-shadow;
+    @include media-breakpoint-down(sm) {
+        min-height: auto;
+        padding: 25px 25px 35px 25px;
+    }
 
-        .create-title {
-            margin-bottom: 45px;
-            color: $theme-gray-dark;
-            @include font(32px, bold);
+    .wrapper {
+        max-width: 770px;
 
-            .alt {
-                color: $theme-orange;
-            }
-
-            @include media-breakpoint-down(sm) {
-                margin-bottom: 30px;
-                @include font(24px, 800);
-            }
-        }
-
-        .normal-spacing {
-            margin-bottom: 20px;
-        }
-
-        .large-spacing {
-            margin-bottom: 40px;
+        .main-content {
+            padding: 50px 95px;
+            margin-top: 30px;
+            background-color: white;
+            @include blurry-shadow;
 
             @include media-breakpoint-down(sm) {
+                padding: 40px 25px;
+                margin-top: 25px;
+            }
+
+            .create-title {
+                margin-bottom: 45px;
+                text-align: center;
+                color: $theme-gray-dark;
+                @include font(32px, bold);
+
+                .alt {
+                    color: $theme-orange;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 30px;
+                    @include font(24px, 800);
+                }
+            }
+
+            .btn-submit {
+                min-width: 180px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                }
+            }
+
+            .normal-spacing {
                 margin-bottom: 20px;
+            }
+
+            .large-spacing {
+                margin-bottom: 40px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 20px;
+                }
             }
         }
     }

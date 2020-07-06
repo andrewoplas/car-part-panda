@@ -5,7 +5,7 @@
         <div class="filter">
 
             <div class="filter-item">
-                <x-label title="MERK"></x-label>
+                <x-label class="space-bottom" title="MERK"></x-label>
                 <x-select
                         class="block"
                         placeholder="Toon alle merken"
@@ -14,7 +14,7 @@
             </div>
 
             <div class="filter-item">
-                <x-label title="MODEL"></x-label>
+                <x-label class="space-bottom" title="MODEL"></x-label>
                 <x-select
                         class="block"
                         placeholder="Toon alle modellen"
@@ -23,7 +23,7 @@
             </div>
 
             <div class="filter-item">
-                <x-label title="EDITIE"></x-label>
+                <x-label class="space-bottom" title="EDITIE"></x-label>
                 <x-select
                         class="block"
                         placeholder="Toon alle edities"
@@ -32,7 +32,7 @@
             </div>
 
             <div class="filter-item">
-                <x-label title="KOETSWERK"></x-label>
+                <x-label class="space-bottom" title="KOETSWERK"></x-label>
                 <x-select
                         class="block"
                         placeholder="Geen voorkeur"
@@ -41,7 +41,7 @@
             </div>
 
             <div class="filter-item">
-                <x-label title="DEUREN"></x-label>
+                <x-label class="space-bottom" title="DEUREN"></x-label>
                 <x-select
                         class="block"
                         placeholder="Geen voorkeur"
@@ -51,7 +51,7 @@
 
             <div class="filter-item">
                 <div class="label-value">
-                    <x-label title="PRIJS"></x-label>
+                    <x-label class="space-bottom" title="PRIJS"></x-label>
                     <span class="value">Vanaf € 17.500</span>
                 </div>
 
@@ -60,7 +60,7 @@
 
             <div class="filter-item">
                 <div class="label-value">
-                    <x-label title="BOUWJAAR"></x-label>
+                    <x-label class="space-bottom" title="BOUWJAAR"></x-label>
                     <span class="value">Alles</span>
                 </div>
 
@@ -69,7 +69,7 @@
 
             <div class="filter-item">
                 <div class="label-value">
-                    <x-label title="KILOMETERSTAND"></x-label>
+                    <x-label class="space-bottom" title="KILOMETERSTAND"></x-label>
                     <span class="value">Alles</span>
                 </div>
 
@@ -77,7 +77,7 @@
             </div>
 
             <div class="filter-item checkbox">
-                <x-label title="AANKRUISVAKKEN"></x-label>
+                <x-label class="space-bottom" title="AANKRUISVAKKEN"></x-label>
 
                 <div class="group">
                     <x-checkbox title="Enkel velgen met banden"></x-checkbox>
@@ -86,7 +86,7 @@
             </div>
 
             <div class="filter-item checkbox">
-                <x-label title="RADIO BUTTONS"></x-label>
+                <x-label class="space-bottom" title="RADIO BUTTONS"></x-label>
 
                 <div class="group">
                     <x-radio-button id="optie-1" value="optie-1" name="optie" title="Optie 1"></x-radio-button>
