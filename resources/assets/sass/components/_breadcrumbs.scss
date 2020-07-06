@@ -1,0 +1,19 @@
+.Breadcrumbs {
+    @include flex(flex-start, center);
+
+    .item {
+        color: $theme-gray;
+        @include font(14px, bold);
+
+        &.current {
+            font-weight: 400;
+        }
+    }
+
+    .divider {
+        color: $theme-gray;
+        display: inline-block;
+        margin: 0 5px;
+        @include font(14px);
+    }
+}

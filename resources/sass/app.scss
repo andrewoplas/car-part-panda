@@ -24,6 +24,7 @@
 @import "../assets/sass/components/input";
 @import "../assets/sass/components/textarea";
 @import "../assets/sass/components/results-header";
+@import "../assets/sass/components/breadcrumbs";
 
 // Pages
 @import "../assets/sass/pages/modal";
@@ -34,6 +35,7 @@
 @import "../assets/sass/pages/chat";
 @import "../assets/sass/pages/signup";
 @import "../assets/sass/pages/profile";
+@import "../assets/sass/pages/settings-change-profile";
 
 body {
     background-color: $theme-extra-light;

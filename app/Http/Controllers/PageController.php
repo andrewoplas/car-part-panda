@@ -48,4 +48,9 @@ class PageController extends Controller
     {
         return view('pages.profile');
     }
+
+    public function settingsChangeProfile()
+    {
+        return view('pages.settings-change-profile');
+    }
 }

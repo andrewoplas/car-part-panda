@@ -98,13 +98,13 @@
         </div>
 
         <div class="main-content">
-            <div class="breadcrumbs">
-                <a href="javascript:void(0)" class="item">Home</a>
-                <span class="divider">></span>
-                <a href="javascript:void(0)" class="item">Te koop</a>
-                <span class="divider">></span>
-                <a href="javascript:void(0)" class="item current">Auto’s</a>
-            </div>
+            <x-breadcrumbs
+                    :links="[
+                        ['name' => 'Home', 'href' => '/', 'is_current' => false],
+                        ['name' => 'Te koop', 'href' => '#', 'is_current' => false],
+                        ['name' => 'Auto’s', 'href' => '#', 'is_current' => true]
+                        ]"
+            ></x-breadcrumbs>
 
             <div class="horizontal-banner"></div>
 

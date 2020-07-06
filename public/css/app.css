@@ -952,6 +952,32 @@ p {
   line-height: 100%;
 }
 
+.Breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.Breadcrumbs .item {
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+}
+.Breadcrumbs .item.current {
+  font-weight: 400;
+}
+.Breadcrumbs .divider {
+  color: #67707e;
+  display: inline-block;
+  margin: 0 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+}
+
 .Modal {
   min-width: 100%;
   min-height: 100vh;
@@ -1516,7 +1542,6 @@ p {
 .Browse {
   display: grid;
   grid-template-columns: 350px 1fr 0.2fr;
-  grid-template-areas: "filter main-content advertisement";
 }
 @media (max-width: 1199.98px) {
   .Browse {
@@ -1529,7 +1554,6 @@ p {
   }
 }
 .Browse .filter {
-  grid-area: filter;
   width: 100%;
   padding: 30px 25px;
   background-color: white;
@@ -1568,38 +1592,12 @@ p {
   margin-top: 15px;
 }
 .Browse .main-content {
-  grid-area: main-content;
   padding: 40px 25px 150px 25px;
 }
 @media (max-width: 767.98px) {
   .Browse .main-content {
     padding: 20px 25px 40px 25px;
   }
-}
-.Browse .main-content .breadcrumbs {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-.Browse .main-content .breadcrumbs .item {
-  color: #67707e;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 100%;
-}
-.Browse .main-content .breadcrumbs .item.current {
-  font-weight: 400;
-}
-.Browse .main-content .breadcrumbs .divider {
-  color: #67707e;
-  display: inline-block;
-  margin: 0 5px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 100%;
 }
 .Browse .main-content .horizontal-banner {
   width: 100%;
@@ -1657,7 +1655,6 @@ p {
 }
 .Browse .advertisement {
   padding-right: 25px;
-  grid-area: advertisement;
 }
 @media (max-width: 1199.98px) {
   .Browse .advertisement {
@@ -2871,6 +2868,99 @@ body.chat-body #main {
   padding: 17px 25px;
   color: #67707e;
   text-align: center;
+}
+
+.SettingsChangeProfile .main-content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-gap: 50px;
+}
+@media (max-width: 767.98px) {
+  .SettingsChangeProfile .main-content {
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .SettingsChangeProfile .main-content .sidebar {
+    display: none;
+  }
+}
+.SettingsChangeProfile .main-content .sidebar .Avatar {
+  width: 80px;
+  height: 80px;
+}
+.SettingsChangeProfile .main-content .sidebar .header-label {
+  margin-top: 20px;
+}
+.SettingsChangeProfile .main-content .sidebar .links.space-1 {
+  margin-top: 30px;
+}
+.SettingsChangeProfile .main-content .sidebar .links.space-2 {
+  margin-top: 70px;
+}
+.SettingsChangeProfile .main-content .sidebar .links .item {
+  margin-bottom: 18px;
+  display: block;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+}
+.SettingsChangeProfile .main-content .sidebar .links .item.active {
+  font-weight: bold;
+}
+.SettingsChangeProfile .main-content .sidebar .links .item.disabled {
+  color: #c4c6ca;
+  pointer-events: none;
+}
+.SettingsChangeProfile .main-content .content {
+  padding: 60px 70px;
+  background-color: white;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 767.98px) {
+  .SettingsChangeProfile .main-content .content {
+    padding: 25px;
+  }
+}
+.SettingsChangeProfile .main-content .content .page-title {
+  margin-bottom: 60px;
+  color: #3a4047;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+}
+.SettingsChangeProfile .main-content .content .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 25px;
+}
+@media (max-width: 767.98px) {
+  .SettingsChangeProfile .main-content .content .form {
+    grid-template-columns: 1fr;
+  }
+}
+.SettingsChangeProfile .main-content .content .form .item.gebruikersnaam {
+  grid-column: 1/span 2;
+}
+@media (max-width: 767.98px) {
+  .SettingsChangeProfile .main-content .content .form .item.gebruikersnaam {
+    grid-column: 1;
+  }
+}
+.SettingsChangeProfile .main-content .content .btn-submit {
+  margin-top: 30px;
+}
+@media (max-width: 767.98px) {
+  .SettingsChangeProfile .main-content .content .btn-submit {
+    width: 100%;
+    display: block;
+  }
 }
 
 body {

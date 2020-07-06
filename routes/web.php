@@ -26,7 +26,7 @@ Route::get('/profile', 'PageController@profile');
 
 // Settings
 Route::prefix('settings')->group(function () {
-    Route::get('/profile', 'PageController@profile');
+    Route::get('/change-profile', 'PageController@settingsChangeProfile');
     Route::get('/password', 'PageController@password');
     Route::get('/voorkeuren', 'PageController@voorkeuren');
     Route::get('/zoekertjes', 'PageController@zoekertjes');

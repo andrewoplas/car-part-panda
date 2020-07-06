@@ -1,7 +1,6 @@
 .Browse {
     display: grid;
     grid-template-columns: 350px 1fr 0.2fr;
-    grid-template-areas: "filter main-content advertisement";
 
     @include media-breakpoint-down(lg) {
         grid-template-columns: 250px 1fr;
@@ -12,7 +11,6 @@
     }
 
     .filter {
-        grid-area: filter;
         width: 100%;
         padding: 30px 25px;
         background-color: white;
@@ -47,31 +45,10 @@
     }
 
     .main-content {
-        grid-area: main-content;
         padding: 40px 25px 150px 25px;
 
         @include media-breakpoint-down(sm) {
             padding: 20px 25px 40px 25px;
-        }
-
-        .breadcrumbs {
-            @include flex(flex-start, center);
-
-            .item {
-                color: $theme-gray;
-                @include font(14px, bold);
-
-                &.current {
-                    font-weight: 400;
-                }
-            }
-
-            .divider {
-                color: $theme-gray;
-                display: inline-block;
-                margin: 0 5px;
-                @include font(14px);
-            }
         }
 
         .horizontal-banner {
@@ -130,7 +107,6 @@
 
     .advertisement {
         padding-right: 25px;
-        grid-area: advertisement;
 
         @include media-breakpoint-down(lg) {
             display: none;
