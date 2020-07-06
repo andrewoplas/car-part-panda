@@ -1,7 +1,7 @@
 @extends('layouts.default', ['hideFooter' => true])
 
 @section('content')
-    <div class="Chat mobile">
+    <div class="Chat">
         <div class="chat-list">
             <div class="item active">
                 <img src="{{ asset('images/avatar.png') }}" class="Avatar" alt="avatar"/>

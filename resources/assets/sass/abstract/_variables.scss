@@ -1,16 +1,16 @@
-$theme-orange: #FFB41C;
-$theme-orange-darker: #FFA41C;
-$theme-green: #69A752;
-$theme-red: #FF584C;
+$theme-orange: #ffb41c;
+$theme-orange-darker: #ffa41c;
+$theme-green: #69a752;
+$theme-red: #ff584c;
 
-$theme-gray: #67707E;
-$theme-gray-light: #D5D9DE;
-$theme-gray-dark: #3A4047;
+$theme-gray: #67707e;
+$theme-gray-light: #d5d9de;
+$theme-gray-dark: #3a4047;
 
-$theme-light: #C4C6CA;
-$theme-extra-light: #F5F6F6;
+$theme-light: #c4c6ca;
+$theme-extra-light: #f5f6f6;
 
-$theme-lines: #E3E5E8;
+$theme-lines: #e3e5e8;
 
 $border-radius: 4px;
 $font-size: 16px;
@@ -18,13 +18,22 @@ $font-size: 16px;
 $font-primary: "Open Sans", sans-serif;
 
 @mixin theme-orange-gradient {
-  background: $theme-orange;
-  background: linear-gradient(180deg, $theme-orange 0%, $theme-orange-darker 100%);
+    background: $theme-orange;
+    background: linear-gradient(
+        180deg,
+        $theme-orange 0%,
+        $theme-orange-darker 100%
+    );
 }
 
 @mixin theme-faded-image($image) {
-  background: linear-gradient(180deg, rgba(58, 64, 71, 0.41) 29.53%, rgba(58, 64, 71, 0.78) 71.88%), $image;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background: linear-gradient(
+            180deg,
+            rgba(58, 64, 71, 0.41) 29.53%,
+            rgba(58, 64, 71, 0.78) 71.88%
+        ),
+        $image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

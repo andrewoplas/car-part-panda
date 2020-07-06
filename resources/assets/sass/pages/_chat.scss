@@ -18,10 +18,18 @@ body {
     display: grid;
     grid-template-columns: 350px 1fr;
 
+    @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr;
+    }
+
     .chat-list {
         background-color: white;
         @include blurry-shadow;
         height: 100%;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
 
         .item {
             padding: 20px;
@@ -34,7 +42,8 @@ body {
             }
 
             &.new {
-                .recent-message, .time {
+                .recent-message,
+                .time {
                     font-weight: bold !important;
                 }
             }
@@ -116,6 +125,10 @@ body {
                 max-height: calc(100vh - 300px);
                 overflow-y: auto;
 
+                @include media-breakpoint-down(md) {
+                    max-height: calc(100vh - 220px);
+                }
+
                 .item {
                     &:not(:last-child) {
                         margin-bottom: 40px;
@@ -159,10 +172,16 @@ body {
 
                     &.user {
                         .message {
-                            @include flex(stretch, stretch);
+                            @include flex(stretch, flex-end);
 
                             .Avatar {
                                 margin-right: 20px;
+
+                                @include media-breakpoint-down(xs) {
+                                    margin-right: 10px;
+                                    width: 25px;
+                                    height: 25px;
+                                }
                             }
 
                             .content {
@@ -179,10 +198,6 @@ body {
                     &.you {
                         .message {
                             @include flex(flex-end, center);
-
-                            .Avatar {
-                                margin-right: 20px;
-                            }
 
                             .content {
                                 background-color: $theme-orange;
@@ -219,7 +234,49 @@ body {
                     @include font(14px);
                     @include blurry-shadow;
                 }
+
+                @include media-breakpoint-down(md) {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    bottom: 25px;
+                }
             }
+        }
+    }
+}
+
+.Chat.mobile {
+    .chat-list {
+        @include media-breakpoint-down(md) {
+            display: block;
+
+            .recent-message {
+                width: calc(60%) !important;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .recent-message {
+                width: 300px !important;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            .recent-message {
+                width: 200px !important;
+            }
+        }
+
+        @include breakpoint-down(350px) {
+            .recent-message {
+                width: 150px !important;
+            }
+        }
+    }
+
+    .conversation {
+        @include media-breakpoint-down(md) {
+            display: none;
         }
     }
 }

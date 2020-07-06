@@ -34,6 +34,11 @@ class PageController extends Controller
         return view('pages.chat');
     }
 
+    public function chatDetail()
+    {
+        return view('pages.chat-detail');
+    }
+
     public function signup()
     {
         return view('pages.signup');

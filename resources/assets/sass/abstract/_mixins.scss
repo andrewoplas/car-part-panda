@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 @mixin box-shadow($top, $left, $blur, $color) {
     -webkit-box-shadow: $top $left $blur $color;
@@ -94,7 +94,6 @@
 @mixin blurry-shadow {
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
 }
-
 
 @mixin clear-spacing {
     padding: 0;

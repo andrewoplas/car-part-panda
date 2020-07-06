@@ -1,6 +1,5 @@
 .Detail {
     & > .container.vertical-space {
-
         @include media-breakpoint-up(md) {
             padding-bottom: 80px;
         }
@@ -350,8 +349,6 @@
                     background-position: center;
                 }
             }
-
-
         }
 
         .right {

@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -17,6 +19,7 @@ a {
     text-decoration: none;
 }
 
-a, p {
+a,
+p {
     font-size: $font-size;
 }

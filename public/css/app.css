@@ -6,7 +6,9 @@
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,7 +20,8 @@ a {
   text-decoration: none;
 }
 
-a, p {
+a,
+p {
   font-size: 16px;
 }
 
@@ -64,7 +67,7 @@ a, p {
   }
 }
 .placeholder {
-  background-color: #D5D9DE;
+  background-color: #d5d9de;
 }
 
 .text-dark-gray {
@@ -72,7 +75,7 @@ a, p {
   font-weight: normal;
   font-size: 16px;
   line-height: 100%;
-  color: #3A4047;
+  color: #3a4047;
   line-height: 130%;
 }
 
@@ -80,7 +83,7 @@ a, p {
   width: 100%;
   height: 76px;
   padding: 0 25px;
-  background-color: #3A4047;
+  background-color: #3a4047;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,7 +126,7 @@ a, p {
 }
 .Header .left .links a.active {
   font-weight: bold;
-  color: #FFB41C;
+  color: #ffb41c;
 }
 .Header .left .links a.active::after {
   content: "";
@@ -134,7 +137,7 @@ a, p {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #FFB41C;
+  background-color: #ffb41c;
 }
 .Header .right {
   display: flex;
@@ -182,7 +185,7 @@ a, p {
 .Footer {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #3A4047;
+  background-color: #3a4047;
 }
 .Footer .grid {
   display: grid;
@@ -243,7 +246,7 @@ a, p {
   padding: 12px 18px;
   color: white;
   text-align: center;
-  background: linear-gradient(180deg, #FFB41C 0%, #FFA41C 100%);
+  background: linear-gradient(180deg, #ffb41c 0%, #ffa41c 100%);
   border-radius: 4px;
   border: 0;
   outline: 0 !important;
@@ -255,7 +258,7 @@ a, p {
 }
 .Button.disabled {
   color: white;
-  background: #D5D9DE;
+  background: #d5d9de;
   pointer-events: none;
 }
 .Button.block {
@@ -273,27 +276,27 @@ a, p {
 }
 .Button.white {
   border: 1px solid white;
-  color: #67707E;
+  color: #67707e;
   background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .Button.outline {
   background: white;
-  border: 1px solid #FFA41C;
-  color: #FFA41C;
+  border: 1px solid #ffa41c;
+  color: #ffa41c;
   padding: 11px 18px;
 }
 .Button.outline.large {
   padding: 14px 25px;
 }
 .Button.green {
-  background: #69A752;
+  background: #69a752;
 }
 .Button.green.outline {
   padding: 11px 18px;
   background: white;
-  border: 1px solid #69A752;
-  color: #69A752;
+  border: 1px solid #69a752;
+  color: #69a752;
 }
 .Button.green.outline.large {
   padding: 14px 25px;
@@ -303,12 +306,12 @@ a, p {
   font-size: 14px;
 }
 .Button.none {
-  color: #3A4047;
+  color: #3a4047;
   background: transparent !important;
   border-color: transparent !important;
 }
 .Button.none.red {
-  color: #FF584C;
+  color: #ff584c;
 }
 
 .ButtonIcon {
@@ -317,7 +320,7 @@ a, p {
   padding: 10px;
   background-color: white;
   border-radius: 5px;
-  color: #FFB41C;
+  color: #ffb41c;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -326,10 +329,10 @@ a, p {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .ButtonIcon.gray {
-  color: #67707E;
+  color: #67707e;
 }
 .ButtonIcon.disabled {
-  color: #D5D9DE;
+  color: #d5d9de;
 }
 .ButtonIcon .icon {
   display: flex;
@@ -352,7 +355,7 @@ a, p {
   flex-direction: row;
   width: auto;
   margin-bottom: 0;
-  color: #67707E;
+  color: #67707e;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -379,12 +382,12 @@ a, p {
   position: relative;
   flex-shrink: 0;
   background-color: white;
-  border: 1px solid #D5D9DE;
+  border: 1px solid #d5d9de;
   border-radius: 4px;
 }
 .Checkbox label [type=checkbox]:checked + span {
-  background-color: #FFB41C !important;
-  border-color: #FFB41C !important;
+  background-color: #ffb41c !important;
+  border-color: #ffb41c !important;
 }
 .Checkbox label [type=checkbox]:checked + span:before {
   content: "\F00C";
@@ -400,7 +403,7 @@ a, p {
 }
 
 .Label {
-  color: #67707E;
+  color: #67707e;
   display: block;
   letter-spacing: 0.1em;
   font-family: "Open Sans", sans-serif;
@@ -439,21 +442,21 @@ a, p {
   align-self: stretch;
 }
 .ProductCardHorizontal .information .title {
-  color: #FFB41C;
+  color: #ffb41c;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
 }
 .ProductCardHorizontal .information .price {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
 }
 .ProductCardHorizontal .information .kilometers {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -461,7 +464,7 @@ a, p {
 }
 .ProductCardHorizontal .information .location {
   margin-top: auto;
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -517,7 +520,7 @@ a, p {
   align-self: stretch;
 }
 .ProductCardVertical .information .title {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -527,14 +530,14 @@ a, p {
   font-weight: 400;
 }
 .ProductCardVertical .information .price {
-  color: #FFB41C;
+  color: #ffb41c;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
 }
 .ProductCardVertical .information .kilometers {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -548,7 +551,7 @@ a, p {
   flex-direction: row;
 }
 .ProductCardVertical .information .location-star .location {
-  color: #C4C6CA;
+  color: #c4c6ca;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 12px;
@@ -556,7 +559,7 @@ a, p {
 }
 .ProductCardVertical .information .location-star .star-icon {
   flex-shrink: 0;
-  color: #C4C6CA;
+  color: #c4c6ca;
   font-size: 18px;
 }
 @media (max-width: 767.98px) {
@@ -603,7 +606,7 @@ a, p {
   justify-content: stretch;
   flex-direction: row;
   margin: 0;
-  color: #67707E;
+  color: #67707e;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -626,14 +629,14 @@ a, p {
   /* background-color only for content */
   background-clip: content-box;
   background-color: white;
-  border: 1px solid #D5D9DE;
+  border: 1px solid #d5d9de;
   border-radius: 50%;
   line-height: 0;
 }
 .RadioButton input[type=radio]:checked + label:before {
   content: "";
-  background-color: #FFB41C;
-  border-color: #FFB41C;
+  background-color: #ffb41c;
+  border-color: #ffb41c;
 }
 .RadioButton .sound-signal label {
   display: inline-flex;
@@ -652,33 +655,33 @@ a, p {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  background: #FFB41C;
+  background: #ffb41c;
   border-radius: 25px;
 }
 .Range::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #FFB41C;
+  background: #ffb41c;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -6.5px;
 }
 .Range:focus::-webkit-slider-runnable-track {
-  background: #FFB41C;
+  background: #ffb41c;
 }
 .Range::-moz-range-track {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  background: #FFB41C;
+  background: #ffb41c;
   border-radius: 25px;
 }
 .Range::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #FFB41C;
+  background: #ffb41c;
   cursor: pointer;
 }
 .Range::-ms-track {
@@ -691,32 +694,32 @@ a, p {
   color: transparent;
 }
 .Range::-ms-fill-lower {
-  background: #FFB41C;
+  background: #ffb41c;
   border-radius: 50px;
 }
 .Range::-ms-fill-upper {
-  background: #FFB41C;
+  background: #ffb41c;
   border-radius: 50px;
 }
 .Range::-ms-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #FFB41C;
+  background: #ffb41c;
   cursor: pointer;
 }
 .Range:focus::-ms-fill-lower {
-  background: #FFB41C;
+  background: #ffb41c;
 }
 .Range:focus::-ms-fill-upper {
-  background: #FFB41C;
+  background: #ffb41c;
 }
 
 .Select {
   padding: 10px 15px;
-  border: 1px solid #E3E5E8;
+  border: 1px solid #e3e5e8;
   border-radius: 3px;
-  color: #67707E;
+  color: #67707e;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -734,7 +737,7 @@ a, p {
 }
 
 .Back {
-  color: #67707E;
+  color: #67707e;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -784,7 +787,7 @@ a, p {
 .Pagination .pages .item {
   width: 46px;
   height: 100%;
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -813,16 +816,16 @@ a, p {
 }
 .Pagination .pages .item.active {
   color: white;
-  background-color: #FFB41C;
+  background-color: #ffb41c;
   box-shadow: 1px 1px 16px rgba(255, 184, 0, 0.4);
   border-radius: 5px;
 }
 
 .Input {
   padding: 7px 15px;
-  border: 1px solid #E3E5E8;
+  border: 1px solid #e3e5e8;
   border-radius: 3px;
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -835,8 +838,8 @@ a, p {
 .Textarea {
   width: 100%;
   padding: 20px 30px;
-  border: 1px solid #E3E5E8;
-  color: #3A4047;
+  border: 1px solid #e3e5e8;
+  color: #3a4047;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -912,7 +915,7 @@ a, p {
   width: 57px;
   height: 30px;
   margin-top: 8px;
-  background: #C4C6CA;
+  background: #c4c6ca;
 }
 .Home .landing .main-content .store-container {
   display: none;
@@ -966,14 +969,14 @@ a, p {
   font-size: 14px;
   line-height: 100%;
   margin-bottom: 30px;
-  color: #67707E;
+  color: #67707e;
 }
 .Home .second-row .category-list .item {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Home .second-row .category-list .item:not(:first-child) {
   margin-top: 10px;
@@ -985,7 +988,7 @@ a, p {
   line-height: 100%;
   margin-top: 40px;
   display: block;
-  color: #C4C6CA;
+  color: #c4c6ca;
 }
 .Home .third-row {
   padding: 80px 0;
@@ -997,14 +1000,14 @@ a, p {
 }
 .Home .third-row .header {
   text-align: center;
-  color: #3A4047;
+  color: #3a4047;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 100%;
 }
 .Home .third-row .subheader {
-  color: #67707E;
+  color: #67707e;
   text-align: center;
   margin-top: 12px;
 }
@@ -1049,10 +1052,10 @@ a, p {
 .Home .third-row .list-dots .circle {
   font-size: 16px;
   margin: 0 4px;
-  color: #D5D9DE;
+  color: #d5d9de;
 }
 .Home .third-row .list-dots .circle.current {
-  color: #FFB41C;
+  color: #ffb41c;
 }
 .Home .third-row .download-app {
   margin-top: 65px;
@@ -1143,7 +1146,7 @@ a, p {
   font-weight: normal;
   font-size: 12px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Browse .filter .filter-item .group {
   margin-top: 15px;
@@ -1164,7 +1167,7 @@ a, p {
   flex-direction: row;
 }
 .Browse .main-content .breadcrumbs .item {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -1174,7 +1177,7 @@ a, p {
   font-weight: 400;
 }
 .Browse .main-content .breadcrumbs .divider {
-  color: #67707E;
+  color: #67707e;
   display: inline-block;
   margin: 0 5px;
   font-family: "Open Sans", sans-serif;
@@ -1186,7 +1189,7 @@ a, p {
   width: 100%;
   height: 90px;
   margin-top: 35px;
-  background-color: #D5D9DE;
+  background-color: #d5d9de;
 }
 @media (max-width: 767.98px) {
   .Browse .main-content .horizontal-banner {
@@ -1209,14 +1212,14 @@ a, p {
   flex-direction: row;
 }
 .Browse .main-content .results .results-header .value {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 100%;
 }
 .Browse .main-content .results .results-header .sort {
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -1278,7 +1281,7 @@ a, p {
   width: 100%;
   max-width: 216px;
   height: 624px;
-  background-color: #D5D9DE;
+  background-color: #d5d9de;
 }
 
 .Browse.mobile .filter {
@@ -1290,7 +1293,7 @@ a, p {
     align-items: stretch;
     justify-content: stretch;
     flex-direction: column;
-    background-color: #F5F6F6;
+    background-color: #f5f6f6;
   }
 }
 
@@ -1349,7 +1352,7 @@ a, p {
   font-weight: 800;
   font-size: 32px;
   line-height: 100%;
-  color: #3A4047;
+  color: #3a4047;
   line-height: 100%;
 }
 .Detail .main-details .left .year {
@@ -1357,7 +1360,7 @@ a, p {
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
   line-height: 100%;
 }
 .Detail .main-details .left .price {
@@ -1365,7 +1368,7 @@ a, p {
   font-weight: 800;
   font-size: 32px;
   line-height: 100%;
-  color: #FFB41C;
+  color: #ffb41c;
   line-height: 100%;
 }
 .Detail .main-details .left .main-image {
@@ -1448,14 +1451,14 @@ a, p {
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Detail .main-details .right .contact .user-information .group .address {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Detail .main-details .right .contact .user-information .btn-contact {
   margin-left: auto;
@@ -1492,14 +1495,14 @@ a, p {
   font-weight: bold;
   font-size: 18px;
   line-height: 100%;
-  color: #3A4047;
+  color: #3a4047;
 }
 .Detail .main-details .right .contact .product-information .item .value .alt {
   font-weight: 400;
 }
 .Detail .main-details .right .contact .status {
   margin-top: 30px;
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -1560,14 +1563,14 @@ a, p {
   font-weight: normal;
   font-size: 16px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Detail .other-details .left .details .content.column .item .value {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
-  color: #3A4047;
+  color: #3a4047;
 }
 .Detail .other-details .left .block-placeholder {
   height: 120px;
@@ -1624,7 +1627,7 @@ a, p {
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Detail .other-details .left .user-location .header .user-information .group .address {
   margin-top: 5px;
@@ -1632,7 +1635,7 @@ a, p {
   font-weight: normal;
   font-size: 16px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
 }
 .Detail .other-details .left .user-location .header .user-information .btn-contact {
   margin-left: auto;
@@ -1711,7 +1714,7 @@ a, p {
   font-weight: 800;
   font-size: 32px;
   line-height: 100%;
-  color: #3A4047;
+  color: #3a4047;
   line-height: 100%;
 }
 .AdEdit .main-details .year {
@@ -1719,7 +1722,7 @@ a, p {
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  color: #67707E;
+  color: #67707e;
   line-height: 100%;
 }
 .AdEdit .main-details .price {
@@ -1728,7 +1731,7 @@ a, p {
   font-size: 32px;
   line-height: 100%;
   margin-top: 5px;
-  color: #FFB41C;
+  color: #ffb41c;
   line-height: 100%;
 }
 .AdEdit .main-details .left .main-image {
@@ -1806,7 +1809,7 @@ a, p {
   font-weight: bold;
   font-size: 18px;
   line-height: 100%;
-  color: #3A4047;
+  color: #3a4047;
 }
 .AdEdit .main-details .right .product-information .item .value .alt {
   font-weight: 400;
@@ -1924,7 +1927,7 @@ body #main {
 }
 
 #user-name, .Chat .conversation .header .details .name, .Chat .chat-list .item .Avatar + div .details .name {
-  color: #3A4047;
+  color: #3a4047;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -1936,10 +1939,20 @@ body #main {
   display: grid;
   grid-template-columns: 350px 1fr;
 }
+@media (max-width: 991.98px) {
+  .Chat {
+    grid-template-columns: 1fr;
+  }
+}
 .Chat .chat-list {
   background-color: white;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
   height: 100%;
+}
+@media (max-width: 991.98px) {
+  .Chat .chat-list {
+    display: none;
+  }
 }
 .Chat .chat-list .item {
   padding: 20px;
@@ -1948,12 +1961,13 @@ body #main {
   align-items: center;
   justify-content: stretch;
   flex-direction: row;
-  border-bottom: 1px solid #E3E5E8;
+  border-bottom: 1px solid #e3e5e8;
 }
 .Chat .chat-list .item.active {
-  background-color: #F5F6F6;
+  background-color: #f5f6f6;
 }
-.Chat .chat-list .item.new .recent-message, .Chat .chat-list .item.new .time {
+.Chat .chat-list .item.new .recent-message,
+.Chat .chat-list .item.new .time {
   font-weight: bold !important;
 }
 .Chat .chat-list .item .Avatar {
@@ -1973,7 +1987,7 @@ body #main {
 }
 .Chat .chat-list .item .Avatar + div .details .recent-message {
   margin-top: 5px;
-  color: #67707E;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -1990,7 +2004,7 @@ body #main {
   font-size: 12px;
   line-height: 100%;
   margin-left: auto;
-  color: #67707E;
+  color: #67707e;
 }
 .Chat .conversation {
   display: flex;
@@ -2000,7 +2014,7 @@ body #main {
 }
 .Chat .conversation .header {
   padding: 15px 30px 15px 20px;
-  background-color: #F5F6F6;
+  background-color: #f5f6f6;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
@@ -2008,7 +2022,7 @@ body #main {
   flex-direction: row;
 }
 .Chat .conversation .header .details {
-  background-color: #F5F6F6;
+  background-color: #f5f6f6;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -2018,7 +2032,7 @@ body #main {
   margin-right: 20px;
 }
 .Chat .conversation .header .icon {
-  color: #67707E;
+  color: #67707e;
   cursor: pointer;
 }
 .Chat .conversation .chat-area {
@@ -2034,6 +2048,11 @@ body #main {
   max-height: calc(100vh - 300px);
   overflow-y: auto;
 }
+@media (max-width: 991.98px) {
+  .Chat .conversation .chat-area .chat-messages {
+    max-height: calc(100vh - 220px);
+  }
+}
 .Chat .conversation .chat-area .chat-messages .item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -2047,7 +2066,7 @@ body #main {
   font-weight: 800;
   font-size: 12px;
   line-height: 100%;
-  color: #D5D9DE;
+  color: #d5d9de;
   text-align: center;
   letter-spacing: 0.1em;
 }
@@ -2077,19 +2096,26 @@ body #main {
 }
 .Chat .conversation .chat-area .chat-messages .item.user .message {
   display: flex;
-  align-items: stretch;
+  align-items: flex-end;
   justify-content: stretch;
   flex-direction: row;
 }
 .Chat .conversation .chat-area .chat-messages .item.user .message .Avatar {
   margin-right: 20px;
 }
+@media (max-width: 575.98px) {
+  .Chat .conversation .chat-area .chat-messages .item.user .message .Avatar {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+}
 .Chat .conversation .chat-area .chat-messages .item.user .message .content {
   background-color: white;
-  color: #3A4047;
+  color: #3a4047;
 }
 .Chat .conversation .chat-area .chat-messages .item.user .message .content .time {
-  color: #C4C6CA;
+  color: #c4c6ca;
 }
 .Chat .conversation .chat-area .chat-messages .item.you .message {
   display: flex;
@@ -2097,11 +2123,8 @@ body #main {
   justify-content: flex-end;
   flex-direction: row;
 }
-.Chat .conversation .chat-area .chat-messages .item.you .message .Avatar {
-  margin-right: 20px;
-}
 .Chat .conversation .chat-area .chat-messages .item.you .message .content {
-  background-color: #FFB41C;
+  background-color: #ffb41c;
   color: white;
 }
 .Chat .conversation .chat-area .chat-messages .item.you .message .content .time {
@@ -2127,7 +2150,7 @@ body #main {
   border-radius: 3px;
   align-self: stretch;
   border: 0;
-  color: #3A4047;
+  color: #3a4047;
   outline: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -2135,9 +2158,45 @@ body #main {
   line-height: 100%;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
 }
+@media (max-width: 991.98px) {
+  .Chat .conversation .chat-area .chat-input {
+    margin-left: 25px;
+    margin-right: 25px;
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .Chat.mobile .chat-list {
+    display: block;
+  }
+  .Chat.mobile .chat-list .recent-message {
+    width: calc(60%) !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .Chat.mobile .chat-list .recent-message {
+    width: 300px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .Chat.mobile .chat-list .recent-message {
+    width: 200px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .Chat.mobile .chat-list .recent-message {
+    width: 150px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .Chat.mobile .conversation {
+    display: none;
+  }
+}
 
 body {
-  background-color: #F5F6F6;
+  background-color: #f5f6f6;
 }
 body.white {
   background-color: white;

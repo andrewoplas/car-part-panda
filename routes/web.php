@@ -19,5 +19,6 @@ Route::get('/browse/filter', 'PageController@browseFilter');
 Route::get('/detail', 'PageController@detail');
 Route::get('/ad-edit', 'PageController@adEdit');
 Route::get('/chat', 'PageController@chat');
+Route::get('/chat-detail', 'PageController@chatDetail');
 Route::get('/signup', 'PageController@signup');
 
