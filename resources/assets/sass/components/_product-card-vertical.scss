@@ -43,6 +43,12 @@
             @include font(14px);
         }
 
+        .bid {
+            margin-top: 10px;
+            color: $theme-gray;
+            @include font(14px);
+        }
+
         .location-star {
             margin-top: 15px;
 
@@ -50,31 +56,13 @@
 
             .location {
                 color: $theme-light;
-                @include font(12px);
+                @include font(14px);
             }
 
             .star-icon {
                 flex-shrink: 0;
-                color: $theme-light;
-                font-size: 18px;
-            }
-        }
-
-        @include media-breakpoint-down(sm) {
-            .title {
-                @include font(14px, bold);
-            }
-
-            .price {
-                @include font(14px, bold);
-            }
-
-            .kilometers {
-                @include font(12px);
-            }
-
-            .location {
-                @include font(12px);
+                width: 20px;
+                height: 20px;
             }
         }
     }

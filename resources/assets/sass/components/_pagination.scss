@@ -1,5 +1,4 @@
 .Pagination {
-    margin-top: 50px;
     @include flex(space-between, center);
 
     .pages {

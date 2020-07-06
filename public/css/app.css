@@ -547,13 +547,15 @@ p {
     display: none;
   }
 }
-.ProductCardHorizontal img {
+.ProductCardHorizontal .thumbnail {
   width: 100px;
   height: 100px;
   margin-right: 15px;
+  border-radius: 5px;
   flex-shrink: 0;
 }
 .ProductCardHorizontal .information {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-self: stretch;
@@ -575,13 +577,14 @@ p {
 }
 .ProductCardHorizontal .information .kilometers {
   margin-top: 5px;
+  margin-bottom: 5px;
   color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 100%;
 }
-.ProductCardHorizontal .information .location {
+.ProductCardHorizontal .information .bid {
   margin-top: auto;
   color: #67707e;
   font-family: "Open Sans", sans-serif;
@@ -589,31 +592,24 @@ p {
   font-size: 14px;
   line-height: 100%;
 }
-@media (max-width: 767.98px) {
-  .ProductCardHorizontal .information .title {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100%;
-  }
-  .ProductCardHorizontal .information .price {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100%;
-  }
-  .ProductCardHorizontal .information .kilometers {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-  }
-  .ProductCardHorizontal .information .location {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-  }
+.ProductCardHorizontal .information .location-star {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.ProductCardHorizontal .information .location-star .location {
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+}
+.ProductCardHorizontal .information .location-star .star-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
 }
 
 .ProductCardVertical {
@@ -664,6 +660,14 @@ p {
   font-size: 14px;
   line-height: 100%;
 }
+.ProductCardVertical .information .bid {
+  margin-top: 10px;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+}
 .ProductCardVertical .information .location-star {
   margin-top: 15px;
   display: flex;
@@ -675,39 +679,13 @@ p {
   color: #c4c6ca;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
 }
 .ProductCardVertical .information .location-star .star-icon {
   flex-shrink: 0;
-  color: #c4c6ca;
-  font-size: 18px;
-}
-@media (max-width: 767.98px) {
-  .ProductCardVertical .information .title {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100%;
-  }
-  .ProductCardVertical .information .price {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100%;
-  }
-  .ProductCardVertical .information .kilometers {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-  }
-  .ProductCardVertical .information .location {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-  }
+  width: 20px;
+  height: 20px;
 }
 
 .RadioButton {
@@ -888,7 +866,6 @@ p {
 }
 
 .Pagination {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1685,8 +1662,6 @@ p {
 }
 @media (max-width: 575.98px) {
   .Browse .main-content .results .list {
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
     display: none;
   }
 }
@@ -1698,6 +1673,14 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 8px;
+  }
+}
+.Browse .main-content .pagination {
+  margin-top: 50px;
+}
+@media (max-width: 767.98px) {
+  .Browse .main-content .pagination {
+    margin-top: 25px;
   }
 }
 .Browse .advertisement {
@@ -3046,6 +3029,54 @@ body.chat-body #main {
   .SettingsVoorkeuren .btn-submit {
     width: 100%;
     display: block;
+  }
+}
+
+.SettingsZoekertjes .page-title {
+  margin-bottom: 60px;
+  color: #3a4047;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+}
+@media (max-width: 767.98px) {
+  .SettingsZoekertjes .page-title {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+}
+.SettingsZoekertjes .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+@media (max-width: 991.98px) {
+  .SettingsZoekertjes .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575.98px) {
+  .SettingsZoekertjes .list {
+    display: none;
+  }
+}
+.SettingsZoekertjes .list.mobile {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .SettingsZoekertjes .list.mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+.SettingsZoekertjes .pagination {
+  margin-top: 60px;
+}
+@media (max-width: 767.98px) {
+  .SettingsZoekertjes .pagination {
+    margin-top: 25px;
   }
 }
 

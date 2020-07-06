@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <x-pagination></x-pagination>
+            <x-pagination class="pagination"></x-pagination>
         </div>
 
         <div class="advertisement">

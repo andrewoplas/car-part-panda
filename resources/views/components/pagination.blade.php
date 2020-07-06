@@ -1,4 +1,4 @@
-<div class="Pagination">
+<div class="Pagination {{$class ?? ''}}">
     <x-button-icon class="previous disabled" icon="far fa-chevron-left"></x-button-icon>
 
     <div class="pages">

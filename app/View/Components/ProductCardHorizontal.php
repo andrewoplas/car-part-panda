@@ -13,6 +13,9 @@ class ProductCardHorizontal extends Component
     public $kilometers;
     public $year;
     public $location;
+    public $bidding;
+    public $bid;
+    public $favorite;
     public $class;
 
     public function __construct(
@@ -22,7 +25,10 @@ class ProductCardHorizontal extends Component
         $price,
         $kilometers,
         $year,
-        $location,
+        $location = '',
+        $bidding = false,
+        $bid = null,
+        $favorite = false,
         $class = ''
     )
     {
@@ -34,6 +40,9 @@ class ProductCardHorizontal extends Component
         $this->kilometers = $kilometers;
         $this->year = $year;
         $this->location = $location;
+        $this->bidding = $bidding;
+        $this->bid = $bid;
+        $this->favorite = $favorite;
     }
 
     public function render()

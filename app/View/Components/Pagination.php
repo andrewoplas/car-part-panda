@@ -6,9 +6,11 @@ use Illuminate\View\Component;
 
 class Pagination extends Component
 {
-    public function __construct()
+    public $class;
+
+    public function __construct($class = '')
     {
-        //
+        $this->class = $class;
     }
 
     public function render()
