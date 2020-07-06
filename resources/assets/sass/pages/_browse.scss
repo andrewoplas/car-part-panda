@@ -94,27 +94,6 @@
 
             .results-header {
                 margin-bottom: 20px;
-                @include flex(space-between, center);
-
-                .value {
-                    color: $theme-gray;
-                    @include font(14px, bold);
-                }
-
-                .sort {
-                    color: $theme-gray;
-                    @include font(14px);
-                }
-            }
-
-            .btn-filter {
-                width: 100%;
-                padding: 10px;
-                display: none;
-
-                @include media-breakpoint-down(sm) {
-                    display: block;
-                }
             }
 
             .list {

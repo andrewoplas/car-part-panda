@@ -22,6 +22,17 @@ Route::get('/ad-edit', 'PageController@adEdit');
 Route::get('/chat', 'PageController@chat');
 Route::get('/chat-detail', 'PageController@chatDetail');
 Route::get('/signup', 'PageController@signup');
+Route::get('/profile', 'PageController@profile');
+
+// Settings
+Route::prefix('settings')->group(function () {
+    Route::get('/profile', 'PageController@profile');
+    Route::get('/password', 'PageController@password');
+    Route::get('/voorkeuren', 'PageController@voorkeuren');
+    Route::get('/zoekertjes', 'PageController@zoekertjes');
+    Route::get('/favorieten', 'PageController@favorieten');
+    Route::get('/biedingen', 'PageController@biedingen');
+});
 
 // Modals
 Route::prefix('modal')->group(function () {

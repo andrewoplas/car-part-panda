@@ -1,0 +1,13 @@
+.ResultsHeader {
+    @include flex(space-between, center);
+
+    .value {
+        color: $theme-gray;
+        @include font(14px, bold);
+    }
+
+    .sort {
+        color: $theme-gray;
+        @include font(14px);
+    }
+}

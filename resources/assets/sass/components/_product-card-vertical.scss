@@ -32,17 +32,19 @@
         }
 
         .price {
+            margin-top: 5px;
             color: $theme-orange;
             @include font(16px, bold);
         }
 
         .kilometers {
+            margin-top: 5px;
             color: $theme-gray;
             @include font(14px);
         }
 
         .location-star {
-            margin-top: 5px;
+            margin-top: 15px;
 
             @include flex(space-between, center);
 

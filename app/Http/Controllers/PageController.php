@@ -43,4 +43,9 @@ class PageController extends Controller
     {
         return view('pages.signup');
     }
+
+    public function profile()
+    {
+        return view('pages.profile');
+    }
 }

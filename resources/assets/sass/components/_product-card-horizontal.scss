@@ -29,11 +29,13 @@
         }
 
         .price {
+            margin-top: 5px;
             color: $theme-gray;
             @include font(16px, bold);
         }
 
         .kilometers {
+            margin-top: 5px;
             color: $theme-gray;
             @include font(14px);
         }

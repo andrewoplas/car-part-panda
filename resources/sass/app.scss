@@ -23,6 +23,7 @@
 @import "../assets/sass/components/pagination";
 @import "../assets/sass/components/input";
 @import "../assets/sass/components/textarea";
+@import "../assets/sass/components/results-header";
 
 // Pages
 @import "../assets/sass/pages/modal";
@@ -32,6 +33,7 @@
 @import "../assets/sass/pages/ad-edit";
 @import "../assets/sass/pages/chat";
 @import "../assets/sass/pages/signup";
+@import "../assets/sass/pages/profile";
 
 body {
     background-color: $theme-extra-light;

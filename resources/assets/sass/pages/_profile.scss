@@ -1,0 +1,151 @@
+.Profile {
+    .main-content {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        grid-gap: 50px;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 300px 1fr;
+            grid-gap: 25px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+        }
+
+        .profile {
+            .top {
+                background-color: white;
+                @include blurry-shadow;
+
+                div {
+                    width: 100%;
+                    padding: 40px;
+
+                    @include media-breakpoint-only(md) {
+                        padding: 25px;
+                    }
+
+                    .Avatar {
+                        width: 150px;
+                        height: 150px;
+                        margin: auto;
+                        display: block;
+                    }
+
+                    .name {
+                        margin-top: 25px;
+                        color: $theme-gray-dark;
+                        text-align: center;
+                        @include font(22px, 800);
+                    }
+
+                    .location {
+                        margin-top: 5px;
+                        color: $theme-gray;
+                        text-align: center;
+                        @include font(16px, 600);
+                    }
+
+                    .btn-send-message {
+                        margin-top: 25px;
+                    }
+
+                    .information {
+                        margin-top: 25px;
+                        color: $theme-gray-dark;
+                        line-height: 130%;
+                        text-align: center;
+                    }
+
+                    .membership-status {
+                        color: gray;
+                        margin-top: 40px;
+                        line-height: 200%;
+                        text-align: center;
+                    }
+                }
+
+                .map {
+                    width: 100%;
+                    height: 180px;
+                    background-image: url(/images/map.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+            .block-placeholder {
+                margin-top: 35px;
+                height: 265px;
+            }
+        }
+
+        .classifieds {
+            .header {
+                color: $theme-gray-dark;
+                @include font(22px, 800);
+            }
+
+            .results-header {
+                margin-top: 45px;
+            }
+
+            .block-placeholder {
+                margin-top: 20px;
+                height: 120px;
+            }
+
+            .list {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+
+                @include media-breakpoint-down(md) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        & > .container {
+            display: none;
+        }
+    }
+
+    .main-content.mobile {
+        padding-top: 30px;
+        display: block;
+
+        @include media-breakpoint-up(sm) {
+            display: none;
+        }
+
+        .Avatar {
+            width: 80px;
+            height: 80px;
+        }
+
+        .name {
+            margin-top: 20px;
+            color: $theme-gray;
+            text-align: center;
+            @include font(16px, bold);
+        }
+
+        .menu-list {
+            margin-top: 25px;
+
+            .item {
+                display: block;
+                border-top: 1px solid $theme-lines;
+                padding: 17px 25px;
+                color: $theme-gray;
+                text-align: center;
+            }
+        }
+    }
+}

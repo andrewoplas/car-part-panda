@@ -4,7 +4,6 @@
     <div class="Browse">
         <div class="filter">
 
-            {{-- Merk --}}
             <div class="filter-item">
                 <x-label title="MERK"></x-label>
                 <x-select
@@ -14,7 +13,6 @@
                 ></x-select>
             </div>
 
-            {{-- Model --}}
             <div class="filter-item">
                 <x-label title="MODEL"></x-label>
                 <x-select
@@ -24,7 +22,6 @@
                 ></x-select>
             </div>
 
-            {{-- Editie --}}
             <div class="filter-item">
                 <x-label title="EDITIE"></x-label>
                 <x-select
@@ -34,7 +31,6 @@
                 ></x-select>
             </div>
 
-            {{-- Koetswerk --}}
             <div class="filter-item">
                 <x-label title="KOETSWERK"></x-label>
                 <x-select
@@ -44,7 +40,6 @@
                 ></x-select>
             </div>
 
-            {{-- Deuren --}}
             <div class="filter-item">
                 <x-label title="DEUREN"></x-label>
                 <x-select
@@ -54,7 +49,6 @@
                 ></x-select>
             </div>
 
-            {{-- Prijs --}}
             <div class="filter-item">
                 <div class="label-value">
                     <x-label title="PRIJS"></x-label>
@@ -64,7 +58,6 @@
                 <x-range value="0"></x-range>
             </div>
 
-            {{-- Bouwjaar --}}
             <div class="filter-item">
                 <div class="label-value">
                     <x-label title="BOUWJAAR"></x-label>
@@ -74,7 +67,6 @@
                 <x-range value="0"></x-range>
             </div>
 
-            {{-- Prijs --}}
             <div class="filter-item">
                 <div class="label-value">
                     <x-label title="KILOMETERSTAND"></x-label>
@@ -84,7 +76,6 @@
                 <x-range value="0"></x-range>
             </div>
 
-            {{-- Aankruisvakken --}}
             <div class="filter-item checkbox">
                 <x-label title="AANKRUISVAKKEN"></x-label>
 
@@ -94,7 +85,6 @@
                 </div>
             </div>
 
-            {{-- Radio Buttons --}}
             <div class="filter-item checkbox">
                 <x-label title="RADIO BUTTONS"></x-label>
 
@@ -119,15 +109,9 @@
             <div class="horizontal-banner"></div>
 
             <div class="results">
-                <div class="results-header">
-                    <p class="value">523 resultaten</p>
-                    <p class="sort">
-                        Sorteren op <strong>Datum</strong>
-                        <i class="far fa-chevron-down"></i>
-                    </p>
-                </div>
+                <x-results-header count="523" class="results-header"></x-results-header>
 
-                <a href="#" class="Button btn-filter">Filter</a>
+                <x-button title="Filter" class="block hide-up-md"></x-button>
 
                 <div class="list">
                     @for($i=0; $i<15; $i++)
