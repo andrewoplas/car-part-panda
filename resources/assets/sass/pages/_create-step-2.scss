@@ -1,2 +1,37 @@
-.Create {
+.CreateStep2 {
+    .divider {
+        height: 22px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include flex(center, center);
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid $theme-lines !important;
+        }
+
+        .text {
+            width: 50px;
+            position: absolute;
+            display: block;
+            background-color: white;
+            text-align: center;
+            color: $theme-gray-light;
+            @include font(18px, bold);
+        }
+    }
+
+    .btn-universal-part {
+        margin-bottom: 40px;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 10px;
+        }
+    }
 }

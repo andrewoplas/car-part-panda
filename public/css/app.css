@@ -3249,6 +3249,47 @@ body.chat-body #main {
   }
 }
 
+.CreateStep2 .divider {
+  height: 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (max-width: 767.98px) {
+  .CreateStep2 .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.CreateStep2 .divider hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #e3e5e8 !important;
+}
+.CreateStep2 .divider .text {
+  width: 50px;
+  position: absolute;
+  display: block;
+  background-color: white;
+  text-align: center;
+  color: #d5d9de;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+.CreateStep2 .btn-universal-part {
+  margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+  .CreateStep2 .btn-universal-part {
+    margin-bottom: 10px;
+  }
+}
+
 body {
   background-color: #f5f6f6;
 }
