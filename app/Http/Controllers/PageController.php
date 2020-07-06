@@ -56,4 +56,29 @@ class PageController extends Controller
     {
         return view('pages.settings-wijzig-profiel', ['uri' => Route::getCurrentRoute()->uri()]);
     }
+
+    public function settingsWachtwoord()
+    {
+        return view('pages.settings-wachtwoord', ['uri' => Route::getCurrentRoute()->uri()]);
+    }
+
+    public function settingsVoorkeuren()
+    {
+        return view('pages.settings-voorkeuren', ['uri' => Route::getCurrentRoute()->uri()]);
+    }
+
+    public function settingsZoekertjes()
+    {
+        return view('pages.settings-zoekertjes', ['uri' => Route::getCurrentRoute()->uri()]);
+    }
+
+    public function settingsFavorieten()
+    {
+        return view('pages.settings-favorieten', ['uri' => Route::getCurrentRoute()->uri()]);
+    }
+
+    public function settingsBiedingen()
+    {
+        return view('pages.settings-biedingen', ['uri' => Route::getCurrentRoute()->uri()]);
+    }
 }

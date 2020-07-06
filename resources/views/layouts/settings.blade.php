@@ -17,15 +17,15 @@
 
                     <div class="links space-1">
                         <a href="/settings/zoekertjes"
-                           class="item {{$uri == 'zoekertjes' ? 'active' : ''}}">
+                           class="item {{$uri == 'settings/zoekertjes' ? 'active' : ''}}">
                             Mijn zoekertjes
                         </a>
                         <a href="/settings/favorieten"
-                           class="item {{$uri == 'favorieten' ? 'active' : ''}}">
+                           class="item {{$uri == 'settings/favorieten' ? 'active' : ''}}">
                             Favorieten
                         </a>
                         <a href="/settings/biedingen"
-                           class="item {{$uri == 'biedingen' ? 'active' : ''}}">
+                           class="item {{$uri == 'settings/biedingen' ? 'active' : ''}}">
                             Mijn biedingen
                         </a>
                     </div>
@@ -37,12 +37,12 @@
                         </a>
                         <a href="/settings/wachtwoord"
 
-                           class="item {{$uri == 'wachtwoord' ? 'active' : ''}}">
+                           class="item {{$uri == 'settings/wachtwoord' ? 'active' : ''}}">
                             Wachtwoord
                         </a>
                         <a href="/settings/voorkeuren"
 
-                           class="item {{$uri == 'voorkeuren' ? 'active' : ''}}">
+                           class="item {{$uri == 'settings/voorkeuren' ? 'active' : ''}}">
                             Voorkeuren
                         </a>
                         <a href="#" class="item disabled">

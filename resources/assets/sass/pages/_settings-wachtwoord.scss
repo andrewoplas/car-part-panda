@@ -1,0 +1,30 @@
+.SettingsWachtwoord {
+    padding: 60px 70px;
+    background-color: white;
+    @include blurry-shadow;
+
+    @include media-breakpoint-down(sm) {
+        padding: 25px;
+    }
+
+    .page-title {
+        margin-bottom: 60px;
+        color: $theme-gray-dark;
+        @include font(32px, 800);
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+    }
+
+    .btn-submit {
+        margin-top: 30px;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            display: block;
+        }
+    }
+}
