@@ -37,10 +37,6 @@ p {
   padding: 40px 25px;
 }
 
-#main {
-  min-height: 80vh;
-}
-
 @media (max-width: 575.98px) {
   .hide-on-mobile {
     display: none !important;
@@ -259,6 +255,7 @@ p {
 
 .Button {
   padding: 13px 18px;
+  position: relative;
   color: white;
   text-align: center;
   background: linear-gradient(180deg, #ffb41c 0%, #ffa41c 100%);
@@ -294,20 +291,28 @@ p {
     padding: 13px 18px;
   }
 }
+.Button.outline {
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #ffa41c;
+  color: #ffa41c;
+}
+.Button.outline.large {
+  padding: 16px 25px;
+}
+@media (max-width: 575.98px) {
+  .Button.outline.large {
+    padding: 12px 18px;
+  }
+}
+.Button.glow {
+  box-shadow: 0 8px 16px rgba(255, 184, 0, 0.3);
+}
 .Button.white {
   border: 1px solid white;
   color: #67707e;
   background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-.Button.outline {
-  background: white;
-  border: 1px solid #ffa41c;
-  color: #ffa41c;
-  padding: 11px 18px;
-}
-.Button.outline.large {
-  padding: 16px 25px;
 }
 .Button.green {
   background: #69a752;
@@ -321,6 +326,45 @@ p {
 .Button.green.outline.large {
   padding: 16px 25px;
 }
+@media (max-width: 575.98px) {
+  .Button.green.outline.large {
+    padding: 12px 18px;
+  }
+}
+.Button.dark-gray {
+  background: #3a4047;
+}
+.Button.dark-gray.outline {
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #3a4047;
+  color: #3a4047;
+}
+.Button.dark-gray.outline.large {
+  padding: 16px 25px;
+}
+@media (max-width: 575.98px) {
+  .Button.dark-gray.outline.large {
+    padding: 12px 18px;
+  }
+}
+.Button.red {
+  background: #ff584c;
+}
+.Button.red.outline {
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #ff584c;
+  color: #ff584c;
+}
+.Button.red.outline.large {
+  padding: 16px 25px;
+}
+@media (max-width: 575.98px) {
+  .Button.red.outline.large {
+    padding: 12px 18px;
+  }
+}
 .Button.icon i {
   margin-right: 5px;
   font-size: 14px;
@@ -332,6 +376,9 @@ p {
 }
 .Button.none.red {
   color: #ff584c;
+}
+.Button.not-rounded {
+  border-radius: 0;
 }
 
 .ButtonIcon {
@@ -433,6 +480,9 @@ p {
 }
 .Label.header {
   font-size: 14px;
+}
+.Label.space-bottom {
+  margin-bottom: 8px;
 }
 
 .ProductCardHorizontal {
@@ -872,6 +922,325 @@ p {
   }
 }
 
+.Modal {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.Modal .title {
+  color: #3a4047;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+.Modal .title.left {
+  text-align: left;
+}
+@media (max-width: 575.98px) {
+  .Modal .title.left {
+    text-align: center;
+  }
+}
+.Modal .information {
+  color: #67707e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  line-height: 140%;
+}
+.Modal .content {
+  padding: 50px;
+  background-color: white;
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .Modal .content {
+    padding: 40px 25px;
+  }
+}
+.Modal .content .close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  .Modal .content .close {
+    width: 18px;
+    height: 18px;
+    top: 16px;
+    right: 16px;
+  }
+}
+.ModalLogin .content {
+  width: 516px;
+}
+.ModalLogin .content .title {
+  margin-bottom: 50px;
+}
+.ModalLogin .content .item {
+  margin-bottom: 20px;
+}
+.ModalLogin .content .divider {
+  height: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.ModalLogin .content .divider hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e3e5e8 !important;
+}
+.ModalLogin .content .divider .text {
+  width: 50px;
+  position: absolute;
+  display: block;
+  background-color: white;
+  text-align: center;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  line-height: 140%;
+}
+.ModalLogin .content .btn-register {
+  margin-top: 30px;
+}
+.ModalLogin .content .btn-facebook {
+  background: #3b5998;
+}
+.ModalLogin .content .btn-facebook i {
+  position: absolute;
+  left: 25px;
+  font-size: 20px;
+}
+.ModalLogin .content .register-here {
+  margin-top: 30px;
+  text-align: center;
+  color: #3a4047;
+  line-height: 130%;
+}
+.ModalLogin .content .register-here a {
+  color: #3a4047;
+}
+.ModalSignup .content {
+  width: 516px;
+}
+.ModalSignup .content .title,
+.ModalSignup .content .information {
+  margin-bottom: 30px;
+}
+.ModalSignup .content .item {
+  margin-bottom: 20px;
+}
+.ModalSignup .content .divider {
+  height: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.ModalSignup .content .divider hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e3e5e8 !important;
+}
+.ModalSignup .content .divider .text {
+  width: 50px;
+  position: absolute;
+  display: block;
+  background-color: white;
+  text-align: center;
+  color: #67707e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  line-height: 140%;
+}
+.ModalSignup .content .btn-register {
+  margin-top: 30px;
+}
+.ModalSignup .content .btn-facebook {
+  background: #3b5998;
+}
+.ModalSignup .content .btn-facebook i {
+  position: absolute;
+  left: 25px;
+  font-size: 20px;
+}
+.ModalSignup .content .register-here {
+  margin-top: 30px;
+  text-align: center;
+  color: #3a4047;
+  line-height: 130%;
+}
+.ModalSignup .content .register-here a {
+  color: #3a4047;
+}
+.ModalPricing .content {
+  width: 516px;
+}
+.ModalPricing .content .title {
+  margin-bottom: 50px;
+}
+.ModalPricing .content .item {
+  margin-bottom: 30px;
+}
+.ModalConfirmation .content {
+  width: 750px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+@media (max-width: 575.98px) {
+  .ModalConfirmation .content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.ModalConfirmation .content .title {
+  margin-bottom: 50px;
+}
+@media (max-width: 575.98px) {
+  .ModalConfirmation .content .title {
+    margin-bottom: 30px;
+  }
+}
+.ModalConfirmation .content .button-controls {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (max-width: 575.98px) {
+  .ModalConfirmation .content .button-controls {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+.ModalConfirmation .content .button-controls .item:first-child {
+  margin-right: 10px;
+}
+@media (max-width: 575.98px) {
+  .ModalConfirmation .content .button-controls .item:first-child {
+    margin: 0 0 10px 0;
+  }
+}
+.ModalSendMessage .content {
+  width: 516px;
+}
+.ModalSendMessage .content .title {
+  margin-bottom: 50px;
+}
+.ModalSendMessage .content .item {
+  margin-bottom: 30px;
+}
+.ModalShare .content {
+  width: 800px;
+  padding-left: 170px;
+  padding-right: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 575.98px) {
+  .ModalShare .content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.ModalShare .content .title {
+  margin-bottom: 40px;
+}
+@media (max-width: 575.98px) {
+  .ModalShare .content .title {
+    margin-bottom: 35px;
+  }
+}
+.ModalShare .content .share-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 20px;
+}
+@media (max-width: 991.98px) {
+  .ModalShare .content .share-buttons {
+    grid-template-columns: repeat(2, 100px);
+  }
+}
+@media (max-width: 767.98px) {
+  .ModalShare .content .share-buttons {
+    grid-template-columns: repeat(2, 60px);
+    grid-gap: 10px;
+  }
+}
+.ModalShare .content .share-buttons .item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (max-width: 767.98px) {
+  .ModalShare .content .share-buttons .item {
+    width: 60px;
+    height: 60px;
+  }
+  .ModalShare .content .share-buttons .item img {
+    width: 30px;
+  }
+}
+.ModalShare .content .share-buttons .item.facebook {
+  background-color: #3b5998;
+}
+.ModalShare .content .share-buttons .item.whatsapp {
+  background-color: #25d366;
+}
+.ModalShare .content .share-buttons .item.message {
+  background-color: #67707e;
+}
+.ModalShare .content .share-buttons .item.email {
+  background-color: #c4c4c4;
+}
+.ModalShare .content .share-input {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .ModalShare .content .share-input {
+    margin-top: 35px;
+  }
+}
+.ModalShare .content .share-input input {
+  padding-right: 30px;
+}
+.ModalShare .content .share-input .icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .Home .landing {
   height: 550px;
   background: linear-gradient(180deg, rgba(58, 64, 71, 0.41) 29.53%, rgba(58, 64, 71, 0.78) 71.88%), url(/images/home-background.png);
@@ -1151,9 +1520,6 @@ p {
 }
 .Browse .filter .filter-item.checkbox {
   margin-top: 15px;
-}
-.Browse .filter .filter-item .Label {
-  margin-bottom: 5px;
 }
 .Browse .filter .filter-item .label-value {
   display: flex;
@@ -2318,9 +2684,6 @@ body.chat-body #main {
 }
 .Signup .main-content .form .item {
   margin-bottom: 20px;
-}
-.Signup .main-content .form .item .Label {
-  margin-bottom: 10px;
 }
 .Signup .main-content .form .information {
   text-align: center;

@@ -11,10 +11,6 @@
     }
 }
 
-#main {
-    min-height: 80vh;
-}
-
 @include media-breakpoint-down(xs) {
     .hide-on-mobile {
         display: none !important;

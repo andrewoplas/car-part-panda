@@ -23,15 +23,15 @@
                 </div>
                 <div class="form">
                     <div class="item">
-                        <x-label title="E-MAIL ADRES"></x-label>
+                        <x-label class="space-bottom" title="E-MAIL ADRES"></x-label>
                         <x-input class="block"></x-input>
                     </div>
                     <div class="item">
-                        <x-label title="KIES EEN WACHTWOORD"></x-label>
+                        <x-label class="space-bottom" title="KIES EEN WACHTWOORD"></x-label>
                         <x-input class="block"></x-input>
                     </div>
                     <div class="item">
-                        <x-label title="BEVESTIG WACHTWOORD"></x-label>
+                        <x-label class="space-bottom" title="BEVESTIG WACHTWOORD"></x-label>
                         <x-input class="block"></x-input>
                     </div>
 

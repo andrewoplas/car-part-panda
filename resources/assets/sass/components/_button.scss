@@ -1,5 +1,21 @@
+@mixin outline($color) {
+    padding: 11px 18px;
+    background: white;
+    border: 1px solid $color;
+    color: $color;
+
+    &.large {
+        padding: 16px 25px;
+
+        @include media-breakpoint-down(xs) {
+            padding: 12px 18px;
+        }
+    }
+}
+
 .Button {
     padding: 13px 18px;
+    position: relative;
     color: white;
     text-align: center;
     background: linear-gradient(180deg, #ffb41c 0%, $theme-orange-darker 100%);
@@ -8,6 +24,8 @@
     outline: 0 !important;
     cursor: pointer;
     @include font(16px, bold);
+
+    // Main attributes
 
     &.disabled {
         color: white;
@@ -32,6 +50,16 @@
         }
     }
 
+    &.outline {
+        @include outline($theme-orange-darker);
+    }
+
+    &.glow {
+        box-shadow: 0 8px 16px rgba(255, 184, 0, 0.3);
+    }
+
+    // Colors
+
     &.white {
         border: 1px solid white;
         color: $theme-gray;
@@ -39,31 +67,31 @@
         @include simple-shadow;
     }
 
-    &.outline {
-        background: white;
-        border: 1px solid $theme-orange-darker;
-        color: $theme-orange-darker;
-        padding: 11px 18px;
-
-        &.large {
-            padding: 16px 25px;
-        }
-    }
-
     &.green {
         background: $theme-green;
 
         &.outline {
-            padding: 11px 18px;
-            background: white;
-            border: 1px solid $theme-green;
-            color: $theme-green;
-
-            &.large {
-                padding: 16px 25px;
-            }
+            @include outline($theme-green);
         }
     }
+
+    &.dark-gray {
+        background: $theme-gray-dark;
+
+        &.outline {
+            @include outline($theme-gray-dark);
+        }
+    }
+
+    &.red {
+        background: $theme-red;
+
+        &.outline {
+            @include outline($theme-red);
+        }
+    }
+
+    // Utils
 
     &.icon {
         i {
@@ -80,6 +108,10 @@
         &.red {
             color: $theme-red;
         }
+    }
+
+    &.not-rounded {
+        border-radius: 0;
     }
 }
 

@@ -1,0 +1,336 @@
+.Modal {
+    min-width: 100%;
+    min-height: 100vh;
+    @include flex(center, center);
+
+    .title {
+        color: $theme-gray-dark;
+        text-align: center;
+        @include font(24px, bold);
+
+        &.left {
+            text-align: left;
+
+            @include media-breakpoint-down(xs) {
+                text-align: center;
+            }
+        }
+    }
+
+    .information {
+        color: $theme-gray;
+        text-align: center;
+        @include font(16px, 600);
+        line-height: 140%;
+    }
+
+    .content {
+        padding: 50px;
+        background-color: white;
+        position: relative;
+
+        @include media-breakpoint-down(xs) {
+            padding: 40px 25px;
+        }
+
+        .close {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            cursor: pointer;
+
+            @include media-breakpoint-down(xs) {
+                width: 18px;
+                height: 18px;
+                top: 16px;
+                right: 16px;
+            }
+        }
+    }
+
+    &Login {
+        .content {
+            width: 516px;
+
+            .title {
+                margin-bottom: 50px;
+            }
+
+            .item {
+                margin-bottom: 20px;
+            }
+
+            .divider {
+                height: 22px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @include flex(center, center);
+
+                hr {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 1px solid $theme-lines !important;
+                }
+
+                .text {
+                    width: 50px;
+                    position: absolute;
+                    display: block;
+                    background-color: white;
+                    text-align: center;
+                    color: $theme-gray;
+                    @include font(22px, 600);
+                    line-height: 140%;
+                }
+            }
+
+            .btn-register {
+                margin-top: 30px;
+            }
+
+            .btn-facebook {
+                background: $theme-facebook;
+
+                i {
+                    position: absolute;
+                    left: 25px;
+                    font-size: 20px;
+                }
+            }
+
+            .register-here {
+                margin-top: 30px;
+                text-align: center;
+                color: $theme-gray-dark;
+                line-height: 130%;
+
+                a {
+                    color: $theme-gray-dark;
+                }
+            }
+        }
+    }
+
+    &Signup {
+        .content {
+            width: 516px;
+
+            .title,
+            .information {
+                margin-bottom: 30px;
+            }
+
+            .item {
+                margin-bottom: 20px;
+            }
+
+            .divider {
+                height: 22px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @include flex(center, center);
+
+                hr {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 1px solid $theme-lines !important;
+                }
+
+                .text {
+                    width: 50px;
+                    position: absolute;
+                    display: block;
+                    background-color: white;
+                    text-align: center;
+                    color: $theme-gray;
+                    @include font(22px, 600);
+                    line-height: 140%;
+                }
+            }
+
+            .btn-register {
+                margin-top: 30px;
+            }
+
+            .btn-facebook {
+                background: $theme-facebook;
+
+                i {
+                    position: absolute;
+                    left: 25px;
+                    font-size: 20px;
+                }
+            }
+
+            .register-here {
+                margin-top: 30px;
+                text-align: center;
+                color: $theme-gray-dark;
+                line-height: 130%;
+
+                a {
+                    color: $theme-gray-dark;
+                }
+            }
+        }
+    }
+
+    &Pricing {
+        .content {
+            width: 516px;
+
+            .title {
+                margin-bottom: 50px;
+            }
+
+            .item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &Confirmation {
+        .content {
+            width: 750px;
+            padding-left: 120px;
+            padding-right: 120px;
+
+            @include media-breakpoint-down(xs) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .title {
+                margin-bottom: 50px;
+
+                @include media-breakpoint-down(xs) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .button-controls {
+                margin-top: 50px;
+                @include flex(center, center);
+
+                @include media-breakpoint-down(xs) {
+                    flex-direction: column;
+                    margin-top: 30px;
+                }
+
+                .item:first-child {
+                    margin-right: 10px;
+
+                    @include media-breakpoint-down(xs) {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &SendMessage {
+        .content {
+            width: 516px;
+
+            .title {
+                margin-bottom: 50px;
+            }
+
+            .item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &Share {
+        .content {
+            width: 800px;
+            padding-left: 170px;
+            padding-right: 170px;
+            @include flex(center, center, column);
+
+            @include media-breakpoint-down(xs) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .title {
+                margin-bottom: 40px;
+
+                @include media-breakpoint-down(xs) {
+                    margin-bottom: 35px;
+                }
+            }
+
+            .share-buttons {
+                display: grid;
+                grid-template-columns: repeat(4, 100px);
+                grid-gap: 20px;
+
+                @include media-breakpoint-down(md) {
+                    grid-template-columns: repeat(2, 100px);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    grid-template-columns: repeat(2, 60px);
+                    grid-gap: 10px;
+                }
+
+                .item {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin: auto;
+                    @include flex(center, center);
+
+                    @include media-breakpoint-down(sm) {
+                        width: 60px;
+                        height: 60px;
+
+                        img {
+                            width: 30px;
+                        }
+                    }
+
+                    &.facebook {
+                        background-color: $theme-facebook;
+                    }
+
+                    &.whatsapp {
+                        background-color: $theme-whatsapp;
+                    }
+
+                    &.message {
+                        background-color: $theme-gray;
+                    }
+
+                    &.email {
+                        background-color: $theme-email;
+                    }
+                }
+            }
+
+            .share-input {
+                width: 100%;
+                margin-top: 40px;
+                position: relative;
+
+                @include media-breakpoint-down(xs) {
+                    margin-top: 35px;
+                }
+
+                input {
+                    padding-right: 30px;
+                }
+
+                .icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
