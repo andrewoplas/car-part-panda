@@ -66,6 +66,7 @@
                     width: 128px;
                     height: 43px;
                     margin: 0 4px;
+                    cursor: pointer;
                 }
 
                 @include media-breakpoint-down(sm) {
@@ -159,6 +160,7 @@
 
             @include media-breakpoint-down(sm) {
                 margin-top: 36px;
+                grid-gap: 10px;
             }
 
             @include media-breakpoint-down(xs) {
@@ -209,6 +211,7 @@
                     width: 140px;
                     height: 47px;
                     margin: 0 4px;
+                    cursor: pointer;
 
                     @include media-breakpoint-down(sm) {
                         width: 128px;

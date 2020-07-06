@@ -305,6 +305,9 @@ body.white {
 .SettingsLayout .main-content .sidebar .links .item.disabled {
   color: #c4c6ca;
 }
+.SettingsLayout .main-content .btn-submit {
+  min-width: 180px;
+}
 
 .CreateLayout {
   min-height: calc(100vh - 76px - 254px);
@@ -395,8 +398,8 @@ body.white {
   line-height: 100%;
 }
 .Button.disabled {
-  color: white;
   background: #d5d9de;
+  color: white;
   pointer-events: none;
 }
 .Button.block {
@@ -420,8 +423,8 @@ body.white {
 .Button.outline {
   padding: 11px 18px;
   background: white;
-  border: 1px solid #ffa41c;
   color: #ffa41c;
+  border: 1px solid #ffa41c;
 }
 .Button.outline.large {
   padding: 16px 25px;
@@ -435,8 +438,8 @@ body.white {
   box-shadow: 0 8px 16px rgba(255, 184, 0, 0.3);
 }
 .Button.white {
-  border: 1px solid white;
   color: #67707e;
+  border: 1px solid white;
   background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -446,8 +449,8 @@ body.white {
 .Button.green.outline {
   padding: 11px 18px;
   background: white;
-  border: 1px solid #69a752;
   color: #69a752;
+  border: 1px solid #69a752;
 }
 .Button.green.outline.large {
   padding: 16px 25px;
@@ -463,8 +466,8 @@ body.white {
 .Button.dark-gray.outline {
   padding: 11px 18px;
   background: white;
-  border: 1px solid #3a4047;
   color: #3a4047;
+  border: 1px solid #3a4047;
 }
 .Button.dark-gray.outline.large {
   padding: 16px 25px;
@@ -480,8 +483,8 @@ body.white {
 .Button.red.outline {
   padding: 11px 18px;
   background: white;
-  border: 1px solid #ff584c;
   color: #ff584c;
+  border: 1px solid #ff584c;
 }
 .Button.red.outline.large {
   padding: 16px 25px;
@@ -496,8 +499,8 @@ body.white {
   font-size: 14px;
 }
 .Button.none {
-  color: #3a4047;
   background: transparent !important;
+  color: #3a4047;
   border-color: transparent !important;
 }
 .Button.none.red {
@@ -542,14 +545,14 @@ body.white {
   pointer-events: none;
 }
 .Checkbox label {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
   width: auto;
   margin-bottom: 0;
   color: #67707e;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -569,9 +572,9 @@ body.white {
   display: none;
 }
 .Checkbox label span {
-  margin-right: 15px;
   height: 21px;
   width: 21px;
+  margin-right: 15px;
   display: inline-block;
   position: relative;
   flex-shrink: 0;
@@ -585,10 +588,10 @@ body.white {
 }
 .Checkbox label [type=checkbox]:checked + span:before {
   content: "\F00C";
-  margin-top: 1px;
   height: 100%;
-  font-family: "Font Awesome 5 Pro";
+  margin-top: 1px;
   color: white;
+  font-family: "Font Awesome 5 Pro";
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -619,11 +622,11 @@ body.white {
   flex-direction: row;
 }
 .label-value .value {
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 100%;
-  color: #67707e;
 }
 .label-value.badge .value {
   padding: 6px 10px;
@@ -646,7 +649,7 @@ body.white {
   border-radius: 5px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: stretch;
   flex-direction: row;
 }
@@ -665,8 +668,9 @@ body.white {
 .ProductCardHorizontal .information {
   flex: 1;
   display: flex;
+  align-items: stretch;
+  justify-content: stretch;
   flex-direction: column;
-  align-self: stretch;
 }
 .ProductCardHorizontal .information .title {
   color: #ffb41c;
@@ -739,8 +743,9 @@ body.white {
 .ProductCardVertical .information {
   margin-top: 15px;
   display: flex;
+  align-items: stretch;
+  justify-content: stretch;
   flex-direction: column;
-  align-self: stretch;
 }
 .ProductCardVertical .information .title {
   color: #67707e;
@@ -791,9 +796,9 @@ body.white {
   line-height: 100%;
 }
 .ProductCardVertical .information .location-star .star-icon {
-  flex-shrink: 0;
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
 }
 
 .RadioButton {
@@ -809,7 +814,7 @@ body.white {
 }
 .RadioButton label {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: stretch;
   flex-direction: row;
   margin: 0;
@@ -928,16 +933,16 @@ body.white {
   border-radius: 3px;
   color: #67707e;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 100%;
+  -moz-appearance: none;
+  appearance: none;
   background: url(/images/select-angle-down.svg) no-repeat #fff;
   background-position-y: center;
   background-position-x: 100%;
   background-origin: content-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
 }
 .Select.block {
   width: 100%;
@@ -1051,6 +1056,7 @@ body.white {
   padding: 20px 30px;
   border: 1px solid #e3e5e8;
   color: #3a4047;
+  border-radius: 3px;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -1101,9 +1107,9 @@ body.white {
   font-weight: 400;
 }
 .Breadcrumbs .divider {
-  color: #67707e;
-  display: inline-block;
   margin: 0 5px;
+  display: inline-block;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -1335,7 +1341,7 @@ body.white {
   width: 516px;
 }
 .ModalSendMessage .content .title {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .ModalSendMessage .content .item {
   margin-bottom: 30px;
@@ -1502,6 +1508,7 @@ body.white {
   width: 128px;
   height: 43px;
   margin: 0 4px;
+  cursor: pointer;
 }
 @media (max-width: 767.98px) {
   .Home .landing .main-content .store-container {
@@ -1607,6 +1614,7 @@ body.white {
 @media (max-width: 767.98px) {
   .Home .third-row .list {
     margin-top: 36px;
+    grid-gap: 10px;
   }
 }
 @media (max-width: 575.98px) {
@@ -1663,6 +1671,7 @@ body.white {
   width: 140px;
   height: 47px;
   margin: 0 4px;
+  cursor: pointer;
 }
 @media (max-width: 767.98px) {
   .Home .third-row .download-app .store-container img {
@@ -1711,11 +1720,11 @@ body.white {
   margin-top: 15px;
 }
 .Browse .main-content {
-  padding: 40px 25px 150px 25px;
+  padding: 30px 25px 150px 25px;
 }
 @media (max-width: 767.98px) {
   .Browse .main-content {
-    padding: 20px 25px 40px 25px;
+    padding: 25px 25px 40px 25px;
   }
 }
 .Browse .main-content .horizontal-banner {
@@ -1767,7 +1776,7 @@ body.white {
   .Browse .main-content .results .list.mobile {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 8px;
+    grid-gap: 10px;
   }
 }
 .Browse .main-content .pagination {
@@ -1787,7 +1796,7 @@ body.white {
   }
 }
 .Browse .advertisement .vertical-banner {
-  margin-top: 253px;
+  margin-top: 235px;
   width: 100%;
   max-width: 216px;
   height: 624px;
@@ -1828,7 +1837,7 @@ body.white {
 }
 .Detail .header .button-controls {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: stretch;
   flex-direction: row;
 }
@@ -1858,27 +1867,25 @@ body.white {
   }
 }
 .Detail .main-details .left .title {
+  color: #3a4047;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 32px;
   line-height: 100%;
-  color: #3a4047;
-  line-height: 100%;
 }
 .Detail .main-details .left .year {
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  color: #67707e;
-  line-height: 100%;
 }
 .Detail .main-details .left .price {
+  margin-top: 5px;
+  color: #ffb41c;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 32px;
-  line-height: 100%;
-  color: #ffb41c;
   line-height: 100%;
 }
 .Detail .main-details .left .main-image {
@@ -1889,6 +1896,11 @@ body.white {
   background-position: center;
   background-size: cover;
   border-radius: 5px;
+}
+@media (max-width: 575.98px) {
+  .Detail .main-details .left .main-image {
+    height: 220px;
+  }
 }
 .Detail .main-details .left .thumbnails {
   margin-top: 17px;
@@ -1957,18 +1969,20 @@ body.white {
   margin-right: 20px;
 }
 .Detail .main-details .right .contact .user-information .group .name {
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
-  color: #67707e;
 }
 .Detail .main-details .right .contact .user-information .group .address {
+  display: block;
+  margin-top: 5px;
+  color: #67707e;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 100%;
-  color: #67707e;
 }
 .Detail .main-details .right .contact .user-information .btn-contact {
   margin-left: auto;
@@ -2179,7 +2193,7 @@ body.white {
 .Detail .other-details .right .list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 15px;
+  grid-row-gap: 10px;
 }
 .Detail .other-details .right .Back {
   margin-top: 30px;
@@ -2374,11 +2388,8 @@ body.white {
 .AdEdit .other-details .details .content.column-details .item {
   margin-bottom: 20px;
 }
-.AdEdit .other-details .details .content.column-details .item .Label {
-  margin-bottom: 15px;
-}
 .AdEdit .other-details .details .content.column-details .item .input-group {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 .AdEdit .other-details .details .content.column-opties {
   display: grid;
@@ -2436,7 +2447,7 @@ body.chat-body #main {
   flex: 1;
 }
 
-#user-name, .Chat .conversation .header .details .name, .Chat .chat-list .item .Avatar + div .details .name {
+#user-name, .Chat .conversation .header .details .name, .Chat .chat-list .item .Avatar + div .details .name-time .name {
   color: #3a4047;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -2468,7 +2479,7 @@ body.chat-body #main {
   padding: 20px;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: stretch;
   flex-direction: row;
   border-bottom: 1px solid #e3e5e8;
@@ -2486,14 +2497,31 @@ body.chat-body #main {
 }
 .Chat .chat-list .item .Avatar + div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: stretch;
   flex-direction: row;
   flex: 1;
 }
 .Chat .chat-list .item .Avatar + div .details {
   flex: 1;
-  margin-right: 10px;
+}
+.Chat .chat-list .item .Avatar + div .details .name-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.Chat .chat-list .item .Avatar + div .details .name-time .name {
+  margin-right: 5px;
+  flex: 1;
+}
+.Chat .chat-list .item .Avatar + div .details .name-time .time {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  margin-left: auto;
+  color: #67707e;
 }
 .Chat .chat-list .item .Avatar + div .details .recent-message {
   margin-top: 5px;
@@ -2507,14 +2535,6 @@ body.chat-body #main {
   white-space: nowrap;
   width: 200px;
   overflow: hidden;
-}
-.Chat .chat-list .item .Avatar + div .time {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 100%;
-  margin-left: auto;
-  color: #67707e;
 }
 .Chat .conversation {
   display: flex;
@@ -2530,6 +2550,12 @@ body.chat-body #main {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+}
+@media (max-width: 991.98px) {
+  .Chat .conversation .header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 .Chat .conversation .header .details {
   background-color: #f5f6f6;
@@ -2955,6 +2981,14 @@ body.chat-body #main {
 @media (max-width: 991.98px) {
   .Profile .main-content .classifieds .list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+.Profile .main-content .classifieds .pagination {
+  margin-top: 60px;
+}
+@media (max-width: 767.98px) {
+  .Profile .main-content .classifieds .pagination {
+    margin-top: 25px;
   }
 }
 @media (max-width: 575.98px) {

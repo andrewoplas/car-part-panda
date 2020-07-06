@@ -9,10 +9,12 @@
             <div class="location-star">
                 <p class="location">{{$location}}</p>
 
-                @if($favorite)
-                    <img src="{{ asset('images/star-active.svg') }}" class="star-icon" alt="star icon"/>
-                @else
-                    <img src="{{ asset('images/star.svg') }}" class="star-icon" alt="active star icon"/>
+                @if($canFavorite)
+                    @if($favorite)
+                        <img src="{{ asset('images/star-active.svg') }}" class="star-icon" alt="star icon"/>
+                    @else
+                        <img src="{{ asset('images/star.svg') }}" class="star-icon" alt="active star icon"/>
+                    @endif
                 @endif
             </div>
         @else

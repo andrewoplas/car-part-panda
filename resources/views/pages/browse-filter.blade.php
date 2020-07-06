@@ -3,144 +3,84 @@
 @section('content')
     <div class="Browse mobile">
         <div class="filter">
-
-            {{-- Merk --}}
             <div class="filter-item">
-                <span class="Label">MERK</span>
-                <select class="Select block">
-                    <option selected disabled>Toon alle merken</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
+                <x-label class="space-bottom" title="MERK"></x-label>
+                <x-select
+                        class="block"
+                        placeholder="Toon alle merken"
+                        :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']"
+                ></x-select>
             </div>
 
-            {{-- Model --}}
             <div class="filter-item">
-                <span class="Label">MODEL</span>
-                <select class="Select block">
-                    <option selected disabled>Toon alle modellen</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
+                <x-label class="space-bottom" title="MODEL"></x-label>
+                <x-select
+                        class="block"
+                        placeholder="Toon alle modellen"
+                        :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']"
+                ></x-select>
             </div>
 
-            {{-- Editie --}}
             <div class="filter-item">
-                <span class="Label">EDITIE</span>
-                <select class="Select block">
-                    <option selected disabled>Toon alle edities</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
+                <x-label class="space-bottom" title="EDITIE"></x-label>
+                <x-select
+                        class="block"
+                        placeholder="Toon alle edities"
+                        :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']"
+                ></x-select>
             </div>
 
-
-            {{--            --}}
-
-            {{-- Koetswerk --}}
             <div class="filter-item">
-                <span class="Label">KOETSWERK</span>
-                <select class="Select block">
-                    <option selected disabled>Geen voorkeur</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
+                <x-label class="space-bottom" title="KOETSWERK"></x-label>
+                <x-select
+                        class="block"
+                        placeholder="Geen voorkeur"
+                        :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']"
+                ></x-select>
             </div>
 
-            {{-- Deuren --}}
             <div class="filter-item">
-                <span class="Label">DEUREN</span>
-                <select class="Select block">
-                    <option selected disabled>Geen voorkeur</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
+                <x-label class="space-bottom" title="DEUREN"></x-label>
+                <x-select
+                        class="block"
+                        placeholder="Geen voorkeur"
+                        :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']"
+                ></x-select>
             </div>
 
-            {{-- Prijs --}}
             <div class="filter-item">
-                <div class="label-value">
-                    <span class="Label">PRIJS</span>
-                    <span class="value">Vanaf € 17.500</span>
-                </div>
-
-                <input type="range" class="Range" multiple value="0"/>
+                <x-label class="space-bottom" title="PRIJS" value="Vanaf € 17.500"></x-label>
+                <x-range value="0"></x-range>
             </div>
 
-            {{-- Bouwjaar --}}
             <div class="filter-item">
-                <div class="label-value">
-                    <span class="Label">BOUWJAAR</span>
-                    <span class="value">Alles</span>
-                </div>
-
-                <input type="range" class="Range" multiple value="0"/>
+                <x-label class="space-bottom" title="BOUWJAAR" value="Alles"></x-label>
+                <x-range value="0"></x-range>
             </div>
 
-            {{-- Prijs --}}
             <div class="filter-item">
-                <div class="label-value">
-                    <span class="Label">KILOMETERSTAND</span>
-                    <span class="value">Alles</span>
-                </div>
-
-                <input type="range" class="Range" multiple value="0"/>
+                <x-label class="space-bottom" title="KILOMETERSTAND" value="Alles"></x-label>
+                <x-range value="0"></x-range>
             </div>
 
-            {{-- Aankruisvakken --}}
             <div class="filter-item checkbox">
-                <span class="Label">AANKRUISVAKKEN</span>
+                <x-label class="space-bottom" title="AANKRUISVAKKEN"></x-label>
 
                 <div class="group">
-                    <div class="Checkbox">
-                        <label>
-                            <input type="checkbox"/>
-                            <span></span>Enkel velgen met banden
-                        </label>
-                    </div>
-
-                    <div class="Checkbox">
-                        <label>
-                            <input type="checkbox"/>
-                            <span></span>Enkel velgen met banden
-                        </label>
-                    </div>
+                    <x-checkbox title="Enkel velgen met banden"></x-checkbox>
+                    <x-checkbox title="Enkel velgen met banden"></x-checkbox>
                 </div>
             </div>
 
-            {{-- Radio Buttons --}}
             <div class="filter-item checkbox">
-                <span class="Label">RADIO BUTTONS</span>
+                <x-label class="space-bottom" title="RADIO BUTTONS"></x-label>
 
                 <div class="group">
-                    <div class="RadioButton">
-                        <input type="radio" name="exampleRadios" id="optie-1" value="optie-1"/>
-                        <label for="optie-1">
-                            Optie 1
-                        </label>
-                    </div>
-
-                    <div class="RadioButton">
-                        <input type="radio" name="exampleRadios" id="optie-2" value="optie-2"/>
-                        <label for="optie-2">
-                            Optie 2
-                        </label>
-                    </div>
-
-                    <div class="RadioButton">
-                        <input type="radio" name="exampleRadios" id="optie-3" value="optie-3"/>
-                        <label for="optie-3">
-                            Optie 3
-                        </label>
-                    </div>
+                    <x-radio-button id="optie-1" value="optie-1" name="optie" title="Optie 1"></x-radio-button>
+                    <x-radio-button id="optie-2" value="optie-2" name="optie" title="Optie 2"></x-radio-button>
+                    <x-radio-button id="optie-3" value="optie-3" name="optie" title="Optie 3"></x-radio-button>
                 </div>
             </div>
-
         </div>
     </div>
 @endsection

@@ -3,13 +3,15 @@
     border: 1px solid $theme-lines;
     border-radius: 3px;
     color: $theme-gray;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
-    @include font(16px);
-
     background: url(/images/select-angle-down.svg) no-repeat #fff;
     background-position-y: center;
     background-position-x: 100%;
     background-origin: content-box;
+
+    @include font(16px);
 
     &.block {
         width: 100%;

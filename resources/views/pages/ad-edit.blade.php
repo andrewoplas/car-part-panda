@@ -63,24 +63,24 @@
                         <div>
                             <div class="item">
                                 <div class="item">
-                                    <x-label title="PRIJS"></x-label>
+                                    <x-label class="space-bottom" title="PRIJS"></x-label>
                                     <x-range value="0"></x-range>
                                 </div>
 
                                 <div class="item">
-                                    <x-label title="KILOMETERSTAND"></x-label>
+                                    <x-label class="space-bottom" title="KILOMETERSTAND"></x-label>
                                     <x-input class="block"></x-input>
                                 </div>
 
                                 <div class="item">
-                                    <x-label title="KOETSWERK"></x-label>
+                                    <x-label class="space-bottom" title="KOETSWERK"></x-label>
                                     <x-select class="block"
                                               placeholder="Geen voorkeur"
                                               :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']">
                                     </x-select>
                                 </div>
                                 <div class="item">
-                                    <x-label title="DEUREN"></x-label>
+                                    <x-label class="space-bottom" title="DEUREN"></x-label>
                                     <x-select class="block"
                                               placeholder="Geen voorkeur"
                                               :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']">
@@ -90,19 +90,19 @@
                         </div>
                         <div>
                             <div class="item">
-                                <x-label title="KILOMETERSTAND"></x-label>
+                                <x-label class="space-bottom" title="KILOMETERSTAND"></x-label>
                                 <x-input class="block"></x-input>
                             </div>
 
                             <div class="item">
-                                <x-label title="KOETSWERK"></x-label>
+                                <x-label class="space-bottom" title="KOETSWERK"></x-label>
                                 <x-select class="block"
                                           placeholder="Geen voorkeur"
                                           :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']">
                                 </x-select>
                             </div>
                             <div class="item">
-                                <x-label title="DEUREN"></x-label>
+                                <x-label class="space-bottom" title="DEUREN"></x-label>
                                 <x-select class="block"
                                           placeholder="Geen voorkeur"
                                           :options="['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']">
@@ -111,14 +111,14 @@
                         </div>
                         <div>
                             <div class="item">
-                                <x-label title="AANKRUISVAKKEN"></x-label>
+                                <x-label class="space-bottom" title="AANKRUISVAKKEN"></x-label>
                                 <x-checkbox class="input-group" title="Enkel velgen met banden"></x-checkbox>
                                 <x-checkbox class="input-group" title="Enkel velgen met banden"
                                             checked="true"></x-checkbox>
                             </div>
 
                             <div class="item">
-                                <x-label title="RADIO BUTTONS"></x-label>
+                                <x-label class="space-bottom" title="RADIO BUTTONS"></x-label>
                                 <x-radio-button class="input-group" id="optie-1" value="optie-1" name="optie"
                                                 title="Optie 1">
                                 </x-radio-button>

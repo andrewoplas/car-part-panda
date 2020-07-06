@@ -17,7 +17,7 @@
         }
 
         .button-controls {
-            @include flex(stretch, center);
+            @include flex($align-items: stretch);
 
             .item:first-child {
                 margin-right: 5px;
@@ -48,21 +48,20 @@
 
         .left {
             .title {
-                @include font(32px, 800);
                 color: $theme-gray-dark;
-                line-height: 100%;
+                @include font(32px, 800);
             }
 
             .year {
-                @include font(32px, 600);
                 color: $theme-gray;
-                line-height: 100%;
+
+                @include font(32px, 600);
             }
 
             .price {
-                @include font(32px, 800);
+                margin-top: 5px;
                 color: $theme-orange;
-                line-height: 100%;
+                @include font(32px, 800);
             }
 
             .main-image {
@@ -73,6 +72,10 @@
                 background-position: center;
                 background-size: cover;
                 border-radius: 5px;
+
+                @include media-breakpoint-down(xs) {
+                    height: 220px;
+                }
             }
 
             .thumbnails {
@@ -139,13 +142,15 @@
 
                     .group {
                         .name {
-                            @include font(16px, bold);
                             color: $theme-gray;
+                            @include font(16px, bold);
                         }
 
                         .address {
-                            @include font(16px);
+                            display: block;
+                            margin-top: 5px;
                             color: $theme-gray;
+                            @include font(16px);
                         }
                     }
 
@@ -355,7 +360,7 @@
             .list {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-row-gap: 15px;
+                grid-row-gap: 10px;
             }
 
             .Back {

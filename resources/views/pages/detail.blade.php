@@ -55,7 +55,7 @@
                             </div>
                             <div class="item">
                                 <img src="{{ asset('images/fuel-full.svg') }}" class="icon" alt="icon"/>
-                                <span class="value">185 PK<span class="alt">Elektrisch / Benzine</span></span>
+                                <span class="value">185 PK<span class="alt"> Elektrisch / Benzine</span></span>
                             </div>
                             <div class="item">
                                 <img src="{{ asset('images/calendar-check.svg') }}" class="icon" alt="icon"/>

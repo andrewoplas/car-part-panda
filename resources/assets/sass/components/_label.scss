@@ -17,8 +17,8 @@
     @include flex(space-between, center);
 
     .value {
-        @include font(12px);
         color: $theme-gray;
+        @include font(12px);
     }
 
     &.badge {

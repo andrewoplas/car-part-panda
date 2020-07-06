@@ -18,9 +18,7 @@
 
     .information {
         margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        align-self: stretch;
+        @include flex($direction: column);
 
         .title {
             color: $theme-gray;
@@ -51,7 +49,6 @@
 
         .location-star {
             margin-top: 15px;
-
             @include flex(space-between, center);
 
             .location {
@@ -60,9 +57,9 @@
             }
 
             .star-icon {
-                flex-shrink: 0;
                 width: 20px;
                 height: 20px;
+                flex-shrink: 0;
             }
         }
     }

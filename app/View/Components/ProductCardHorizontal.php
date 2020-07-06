@@ -16,6 +16,7 @@ class ProductCardHorizontal extends Component
     public $bidding;
     public $bid;
     public $favorite;
+    public $canFavorite;
     public $class;
 
     public function __construct(
@@ -29,6 +30,7 @@ class ProductCardHorizontal extends Component
         $bidding = false,
         $bid = null,
         $favorite = false,
+        $canFavorite = false,
         $class = ''
     )
     {
@@ -42,6 +44,7 @@ class ProductCardHorizontal extends Component
         $this->location = $location;
         $this->bidding = $bidding;
         $this->bid = $bid;
+        $this->canFavorite = $canFavorite;
         $this->favorite = $favorite;
     }
 

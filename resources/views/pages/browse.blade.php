@@ -3,7 +3,6 @@
 @section('content')
     <div class="Browse">
         <div class="filter">
-
             <div class="filter-item">
                 <x-label class="space-bottom" title="MERK"></x-label>
                 <x-select
@@ -82,7 +81,6 @@
                     <x-radio-button id="optie-3" value="optie-3" name="optie" title="Optie 3"></x-radio-button>
                 </div>
             </div>
-
         </div>
 
         <div class="main-content">

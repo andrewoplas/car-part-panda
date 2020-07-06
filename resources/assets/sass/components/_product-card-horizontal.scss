@@ -3,7 +3,7 @@
     background-color: white;
     border-radius: 5px;
     @include simple-shadow;
-    @include flex(stretch, center);
+    @include flex($align-items: stretch);
 
     @include media-breakpoint-down(xs) {
         &.hide-on-mobile {
@@ -21,9 +21,7 @@
 
     .information {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-self: stretch;
+        @include flex($direction: column);
 
         .title {
             color: $theme-orange;

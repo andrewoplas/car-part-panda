@@ -62,7 +62,7 @@ body.signup-body .Footer {
 
             .circles {
                 margin-top: 60px;
-                @include flex(stretch, stretch);
+                @include flex();
 
                 @include media-breakpoint-down(md) {
                     margin-top: 30px;

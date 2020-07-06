@@ -43,7 +43,7 @@
                         @endfor
                     </div>
 
-                    <x-pagination></x-pagination>
+                    <x-pagination class="pagination"></x-pagination>
                 </div>
             </div>
         </div>
@@ -55,8 +55,8 @@
                 <a href="/settings/zoekertjes" class="item">Mijn zoekertjes</a>
                 <a href="/settings/favorieten" class="item">Favorieten</a>
                 <a href="/settings/biedingen" class="item">Mijn biedingen</a>
-                <a href="/settings/change-profile" class="item">Wijzig profiel</a>
-                <a href="/settings/password" class="item">Wachtwoord</a>
+                <a href="/settings/wijzig-profiel" class="item">Wijzig profiel</a>
+                <a href="/settings/wachtwoord" class="item">Wachtwoord</a>
                 <a href="/settings/voorkeuren" class="item">Voorkeuren</a>
                 <a href="/" class="item">Afmelden</a>
             </div>

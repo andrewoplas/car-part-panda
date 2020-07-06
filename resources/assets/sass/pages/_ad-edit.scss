@@ -90,7 +90,7 @@
         }
 
         .right {
-            @include flex(stretch, stretch, column);
+            @include flex($direction: column);
 
             @include media-breakpoint-down(sm) {
                 display: none;
@@ -175,12 +175,8 @@
                     .item {
                         margin-bottom: 20px;
 
-                        .Label {
-                            margin-bottom: 15px;
-                        }
-
                         .input-group {
-                            margin-bottom: 8px;
+                            margin-bottom: 5px;
                         }
                     }
                 }

@@ -1,6 +1,6 @@
 body.chat-body {
     height: 100vh;
-    @include flex(stretch, stretch, column);
+    @include flex($direction: column);
     overflow: hidden;
 
     #main {
@@ -34,7 +34,7 @@ body.chat-body {
         .item {
             padding: 20px;
             cursor: pointer;
-            @include flex(stretch, center);
+            @include flex($align-items: stretch);
             border-bottom: 1px solid $theme-lines;
 
             &.active {
@@ -54,15 +54,26 @@ body.chat-body {
             }
 
             .Avatar + div {
-                @include flex(stretch, flex-start);
+                @include flex($align-items: center);
                 flex: 1;
 
                 .details {
                     flex: 1;
-                    margin-right: 10px;
 
-                    .name {
-                        @extend #user-name;
+                    .name-time {
+                        @include flex(space-between, center);
+
+                        .name {
+                            margin-right: 5px;
+                            flex: 1;
+                            @extend #user-name;
+                        }
+
+                        .time {
+                            @include font(12px);
+                            margin-left: auto;
+                            color: $theme-gray;
+                        }
                     }
 
                     .recent-message {
@@ -77,24 +88,23 @@ body.chat-body {
                         overflow: hidden;
                     }
                 }
-
-                .time {
-                    @include font(12px);
-                    margin-left: auto;
-                    color: $theme-gray;
-                }
             }
         }
     }
 
     .conversation {
-        @include flex(stretch, stretch, column);
+        @include flex($direction: column);
 
         .header {
             padding: 15px 30px 15px 20px;
             background-color: $theme-extra-light;
             @include blurry-shadow;
             @include flex(space-between, center);
+
+            @include media-breakpoint-down(md) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
 
             .details {
                 background-color: $theme-extra-light;
@@ -118,7 +128,7 @@ body.chat-body {
         .chat-area {
             position: relative;
             flex: 1;
-            @include flex(stretch, stretch, column);
+            @include flex($direction: column);
 
             .chat-messages {
                 padding: 0 10%;
@@ -172,7 +182,7 @@ body.chat-body {
 
                     &.user {
                         .message {
-                            @include flex(stretch, flex-end);
+                            @include flex($align-items: flex-end);
 
                             .Avatar {
                                 margin-right: 20px;

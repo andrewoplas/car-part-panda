@@ -11,9 +11,9 @@
     }
 
     .divider {
-        color: $theme-gray;
-        display: inline-block;
         margin: 0 5px;
+        display: inline-block;
+        color: $theme-gray;
         @include font(14px);
     }
 }

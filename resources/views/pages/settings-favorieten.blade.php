@@ -15,6 +15,7 @@
                         year="2016"
                         location="2230 Wezemaal, België"
                         favorite
+                        canFavorite
                 ></x-product-card-vertical>
             @endfor
         </div>
@@ -30,6 +31,7 @@
                         year="2016"
                         location="2230 Wezemaal, België"
                         favorite
+                        canFavorite
                 ></x-product-card-horizontal>
             @endfor
         </div>

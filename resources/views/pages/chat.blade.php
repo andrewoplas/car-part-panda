@@ -7,10 +7,12 @@
                 <img src="{{ asset('images/avatar.png') }}" class="Avatar" alt="avatar"/>
                 <div>
                     <div class="details">
-                        <p class="name">Seppe Boudringhien</p>
+                        <div class="name-time">
+                            <p class="name">Seppe Boudringhien</p>
+                            <span class="time">21:45</span>
+                        </div>
                         <p class="recent-message">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
                     </div>
-                    <span class="time">21:45</span>
                 </div>
             </div>
 
@@ -18,10 +20,12 @@
                 <img src="{{ asset('images/avatar.png') }}" class="Avatar" alt="avatar"/>
                 <div>
                     <div class="details">
-                        <p class="name">Seppe Boudringhien</p>
+                        <div class="name-time">
+                            <p class="name">Seppe Boudringhien</p>
+                            <span class="time">21:45</span>
+                        </div>
                         <p class="recent-message">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
                     </div>
-                    <span class="time">21:45</span>
                 </div>
             </div>
 
@@ -30,10 +34,12 @@
                     <img src="{{ asset('images/avatar.png') }}" class="Avatar" alt="avatar"/>
                     <div>
                         <div class="details">
-                            <p class="name">Seppe Boudringhien</p>
+                            <div class="name-time">
+                                <p class="name">Seppe Boudringhien</p>
+                                <span class="time">21:45</span>
+                            </div>
                             <p class="recent-message">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
                         </div>
-                        <span class="time">21:45</span>
                     </div>
                 </div>
             @endfor
