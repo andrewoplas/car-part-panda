@@ -1,0 +1,38 @@
+.CreateLayout {
+    max-width: 770px;
+    margin: auto;
+
+    .main-content {
+        padding: 50px 95px;
+        margin-top: 30px;
+        background-color: white;
+        @include blurry-shadow;
+
+        .create-title {
+            margin-bottom: 45px;
+            color: $theme-gray-dark;
+            @include font(32px, bold);
+
+            .alt {
+                color: $theme-orange;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+                @include font(24px, 800);
+            }
+        }
+
+        .normal-spacing {
+            margin-bottom: 20px;
+        }
+
+        .large-spacing {
+            margin-bottom: 40px;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -81,4 +81,39 @@ class PageController extends Controller
     {
         return view('pages.settings-biedingen', ['uri' => Route::getCurrentRoute()->uri()]);
     }
+
+    public function create()
+    {
+        return view('pages.create');
+    }
+
+    public function createStep1()
+    {
+        return view('pages.create-step-1');
+    }
+
+    public function createStep2()
+    {
+        return view('pages.create-step-2');
+    }
+
+    public function createRim()
+    {
+        return view('pages.create-rim');
+    }
+
+    public function createTire()
+    {
+        return view('pages.create-tire');
+    }
+
+    public function createCar()
+    {
+        return view('pages.create-car');
+    }
+
+    public function createAccessory()
+    {
+        return view('pages.create-accessory');
+    }
 }

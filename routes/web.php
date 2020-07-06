@@ -34,6 +34,17 @@ Route::prefix('settings')->group(function () {
     Route::get('/biedingen', 'PageController@settingsBiedingen');
 });
 
+// Create
+Route::prefix('create')->group(function () {
+    Route::get('/', 'PageController@create');
+    Route::get('/step/1', 'PageController@createStep1');
+    Route::get('/step/2', 'PageController@createStep2');
+    Route::get('/rim', 'PageController@createRim');
+    Route::get('/tire', 'PageController@createTire');
+    Route::get('/car', 'PageController@createCar');
+    Route::get('/accessory', 'PageController@createAccessory');
+});
+
 // Modals
 Route::prefix('modal')->group(function () {
     Route::get('/login', 'ModalController@login');
