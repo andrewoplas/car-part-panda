@@ -9,27 +9,27 @@
                     Figma.</p>
 
                 <div class="list">
-                    <a href="part/1" class="item part">
+                    <a href="/create/part/1" class="item part">
                         <img src="{{ asset('images/part.svg') }}" class="icon" alt="icon"/>
                         <span class="title">Onderdeel</span>
                     </a>
 
-                    <a href="rims" class="item rims">
+                    <a href="/create/rims" class="item rims">
                         <img src="{{ asset('images/rim.svg') }}" class="icon" alt="icon"/>
                         <span class="title">Velgen</span>
                     </a>
 
-                    <a href="tires" class="item tires">
+                    <a href="/create/tires" class="item tires">
                         <img src="{{ asset('images/tire.svg') }}" class="icon" alt="icon"/>
                         <span class="title">Banden</span>
                     </a>
 
-                    <a href="car" class="item car">
+                    <a href="/create/car" class="item car">
                         <img src="{{ asset('images/car.svg') }}" class="icon" alt="icon"/>
                         <span class="title">Auto</span>
                     </a>
 
-                    <a href="accessory" class="item accessory">
+                    <a href="/create/accessory" class="item accessory">
                         <img src="{{ asset('images/accessory.svg') }}" class="icon" alt="icon"/>
                         <span class="title">Accessoire</span>
                     </a>

@@ -1,7 +1,7 @@
 @extends('layouts.create', ['backPageLink' => '/create/step/1', 'backPageName' => 'Kies ander onderdeel'])
 
 @section('create-content')
-    <div class="CreateParts">
+    <div class="CreatePart2">
         <h3 class="create-title">Van welke auto wil je een <span class="alt">aandrijfasbout verkopen??</span></h3>
 
         <div class="normal-spacing">

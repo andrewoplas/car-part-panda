@@ -1,0 +1,44 @@
+.ThreeSelect {
+    width: 100%;
+    position: relative;
+
+    .inputs {
+        @include flex();
+
+        .select-input {
+            z-index: 2;
+            flex: 1;
+
+            &:first-child {
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-left: 0;
+            }
+        }
+    }
+
+    .divider {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        @include flex(space-evenly, center);
+
+        .item {
+            z-index: 3;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: $theme-gray-light;
+            color: $theme-gray;
+            @include flex(center, center);
+            @include font(16px, 600);
+
+            &.slash {
+                margin-right: -12px;
+            }
+        }
+    }
+}

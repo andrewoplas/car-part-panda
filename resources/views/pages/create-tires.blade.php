@@ -10,6 +10,24 @@
         </div>
 
         <div class="normal-spacing">
+            <x-label class="space-bottom" title="BANDENMAAT"></x-label>
+            <x-three-select
+                    :select1="[
+                'placeholder' => 'Kies',
+                'options' => ['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']
+            ]"
+                    :select2="[
+                'placeholder' => 'Kies',
+                'options' => ['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']
+            ]"
+                    :select3="[
+                'placeholder' => 'Kies',
+                'options' => ['value1' => 'Option 1','value2' => 'Option 2','value3' => 'Option 3']
+            ]"
+            ></x-three-select>
+        </div>
+
+        <div class="normal-spacing">
             <x-label class="space-bottom" title="LAADINDEX"></x-label>
             <x-select
                     class="block"
