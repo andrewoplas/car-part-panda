@@ -7,7 +7,7 @@
                 <h1 class="header">
                     Where teams <br/>design together.
                 </h1>
-                <div class="divider hide-down-sm"></div>
+
                 <p class="subheader">Design, prototype, and collaborate <br/> all in the browser—with Figma.</p>
 
                 <div class="store-container">

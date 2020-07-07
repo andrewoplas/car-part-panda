@@ -1466,7 +1466,6 @@ body.white {
 }
 .Home .landing .main-content .header {
   color: white;
-  line-height: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 48px;
@@ -1480,25 +1479,19 @@ body.white {
   }
 }
 .Home .landing .main-content .subheader {
+  margin-top: 35px;
   color: white;
-  line-height: 140%;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 100%;
+  line-height: 140%;
 }
 @media (max-width: 767.98px) {
   .Home .landing .main-content .subheader {
-    margin-top: 36px;
     text-align: center;
     font-size: 18px;
   }
-}
-.Home .landing .main-content .divider {
-  width: 57px;
-  height: 30px;
-  margin-top: 8px;
-  background: #c4c6ca;
 }
 .Home .landing .main-content .store-container {
   display: none;

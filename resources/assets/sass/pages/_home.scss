@@ -2,11 +2,11 @@
     .landing {
         height: 550px;
         background: linear-gradient(
-                180deg,
-                rgba(58, 64, 71, 0.41) 29.53%,
-                rgba(58, 64, 71, 0.78) 71.88%
-            ),
-            url(/images/home-background.png);
+                        180deg,
+                        rgba(58, 64, 71, 0.41) 29.53%,
+                        rgba(58, 64, 71, 0.78) 71.88%
+        ),
+        url(/images/home-background.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -29,7 +29,6 @@
 
             .header {
                 color: white;
-                line-height: 100%;
                 @include font(48px, bold);
 
                 @include media-breakpoint-down(sm) {
@@ -40,22 +39,15 @@
             }
 
             .subheader {
+                margin-top: 35px;
                 color: white;
-                line-height: 140%;
                 @include font(22px, 600);
+                line-height: 140%;
 
                 @include media-breakpoint-down(sm) {
-                    margin-top: 36px;
                     text-align: center;
                     font-size: 18px;
                 }
-            }
-
-            .divider {
-                width: 57px;
-                height: 30px;
-                margin-top: 8px;
-                background: $theme-light;
             }
 
             .store-container {
