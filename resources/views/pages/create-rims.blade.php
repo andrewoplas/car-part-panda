@@ -1,7 +1,7 @@
 @extends('layouts.create', ['backPageLink' => '/create', 'backPageName' => 'Terung'])
 
 @section('create-content')
-    <div class="CreateRim">
+    <div class="CreateRims">
 
         <h3 class="create-title">Welke <span class="alt">velgen</span> wil je <span class="alt">verkopen?</span></h3>
 

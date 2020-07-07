@@ -1,7 +1,7 @@
 @extends('layouts.create', ['backPageLink' => '/create', 'backPageName' => 'Terung'])
 
 @section('create-content')
-    <div class="CreateTire">
+    <div class="CreateTires">
         <h3 class="create-title">Welke <span class="alt">banden</span> wil je <span class="alt">verkopen?</span></h3>
 
         <div class="large-spacing">

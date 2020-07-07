@@ -36,7 +36,7 @@
             </svg>
         </div>
 
-        <x-button title="Registreer semi" class="btn-register"></x-button>
+        <x-button title="Registreer" class="btn-register"></x-button>
 
         <a href="javascript:void(0)" class="sign-up-text">Aanmelden</a>
 

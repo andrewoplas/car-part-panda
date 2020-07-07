@@ -1,7 +1,7 @@
 @extends('layouts.create', ['backPageLink' => '/create', 'backPageName' => 'Terung'])
 
 @section('create-content')
-    <div class="CreateStep1">
+    <div class="CreateParts">
         <h3 class="create-title">Welk onderdeel wil je <span class="alt">verkopen?</span></h3>
 
         <x-select class="block large-spacing"

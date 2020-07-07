@@ -37,10 +37,10 @@ Route::prefix('settings')->group(function () {
 // Create
 Route::prefix('create')->group(function () {
     Route::get('/', 'PageController@create');
-    Route::get('/step/1', 'PageController@createStep1');
-    Route::get('/step/2', 'PageController@createStep2');
-    Route::get('/rim', 'PageController@createRim');
-    Route::get('/tire', 'PageController@createTire');
+    Route::get('/part/1', 'PageController@createPart1');
+    Route::get('/part/2', 'PageController@createPart2');
+    Route::get('/rims', 'PageController@createRims');
+    Route::get('/tires', 'PageController@createTires');
     Route::get('/car', 'PageController@createCar');
     Route::get('/accessory', 'PageController@createAccessory');
 });

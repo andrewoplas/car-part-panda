@@ -87,24 +87,24 @@ class PageController extends Controller
         return view('pages.create');
     }
 
-    public function createStep1()
+    public function createPart1()
     {
-        return view('pages.create-step-1');
+        return view('pages.create-part-1');
     }
 
-    public function createStep2()
+    public function createPart2()
     {
-        return view('pages.create-step-2');
+        return view('pages.create-part-2');
     }
 
-    public function createRim()
+    public function createRims()
     {
-        return view('pages.create-rim');
+        return view('pages.create-rims');
     }
 
-    public function createTire()
+    public function createTires()
     {
-        return view('pages.create-tire');
+        return view('pages.create-tires');
     }
 
     public function createCar()

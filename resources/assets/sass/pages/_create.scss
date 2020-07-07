@@ -1,2 +1,113 @@
+$headerHeight: 76px;
+$footerHeight: 254px;
+
 .Create {
+    min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+    padding: 50px 25px 100px 25px;
+    @include flex(center, center, column);
+
+    @include media-breakpoint-down(sm) {
+        min-height: auto;
+        padding: 25px 25px 35px 25px;
+    }
+
+    .wrapper {
+        max-width: 950px;
+
+        .main-content {
+            margin-top: 30px;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 25px;
+            }
+
+            .create-title {
+                margin-bottom: 30px;
+                text-align: center;
+                color: $theme-gray-dark;
+                @include font(32px, bold);
+
+                .alt {
+                    color: $theme-orange;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 40px;
+                    @include font(24px, 800);
+                }
+            }
+
+            .create-subheader {
+                margin-bottom: 70px;
+                text-align: center;
+                color: $theme-gray;
+                @include font(18px, 600);
+                line-height: 140%;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 45px;
+                }
+            }
+
+            .list {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-gap: 20px;
+
+                @include media-breakpoint-down(sm) {
+                    grid-template-columns: 1fr;
+                    grid-gap: 10px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    width: 950px;
+                }
+
+                .item {
+                    height: 82px;
+                    padding: 0 25px;
+                    background-color: white;
+                    @include flex(center, center);
+                    @include blurry-shadow;
+
+                    @include media-breakpoint-down(sm) {
+                        grid-column: 1 / span 1 !important;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        justify-content: flex-start;
+                    }
+
+                    &.part {
+                        grid-column: 1 / span 3;
+                    }
+
+                    &.rims {
+                        grid-column: 4 / span 3;
+                    }
+
+                    &.tires {
+                        grid-column: 1 / span 2;
+                    }
+
+                    &.car {
+                        grid-column: 3 / span 2;
+                    }
+
+                    &.accessory {
+                        grid-column: 5 / span 2;
+                    }
+
+                    .icon {
+                        margin-right: 24px;
+                    }
+
+                    .title {
+                        color: $theme-gray;
+                        @include font(18px, 600);
+                    }
+                }
+            }
+        }
+    }
 }
