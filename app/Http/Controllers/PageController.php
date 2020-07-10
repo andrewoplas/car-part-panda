@@ -52,6 +52,11 @@ class PageController extends Controller
         return view('pages.profile');
     }
 
+    public function settingsMenu()
+    {
+        return view('pages.settings-menu');
+    }
+
     public function settingsWijzigProfiel()
     {
         return view('pages.settings-wijzig-profiel', ['uri' => Route::getCurrentRoute()->uri()]);

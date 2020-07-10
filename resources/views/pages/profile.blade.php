@@ -20,7 +20,7 @@
                         </div>
                         <div class="map"></div>
                     </div>
-                    <div class="block-placeholder placeholder"></div>
+                    <div class="block-placeholder placeholder hide-on-mobile"></div>
                 </div>
                 <div class="classifieds">
                     <p class="header">Zoekertjes van Gino</p>
@@ -43,22 +43,22 @@
                         @endfor
                     </div>
 
+                    <div class="list mobile">
+                        @for($i=0; $i<4; $i++)
+                            <x-product-card-horizontal
+                                    image="wheel-thumbnail.png"
+                                    alt="thumbnail"
+                                    title="Nissan Skyline R34"
+                                    price="25.000"
+                                    kilometers="30.000"
+                                    year="2016"
+                                    location="2230 Wezemaal, België"
+                            ></x-product-card-horizontal>
+                        @endfor
+                    </div>
+
                     <x-pagination class="pagination"></x-pagination>
                 </div>
-            </div>
-        </div>
-
-        <div class="main-content mobile">
-            <img src="{{ asset('images/avatar.png') }}" class="Avatar center" alt="user avatar"/>
-            <h3 class="name">Seppe Boudringhien</h3>
-            <div class="menu-list">
-                <a href="/settings/zoekertjes" class="item">Mijn zoekertjes</a>
-                <a href="/settings/favorieten" class="item">Favorieten</a>
-                <a href="/settings/biedingen" class="item">Mijn biedingen</a>
-                <a href="/settings/wijzig-profiel" class="item">Wijzig profiel</a>
-                <a href="/settings/wachtwoord" class="item">Wachtwoord</a>
-                <a href="/settings/voorkeuren" class="item">Voorkeuren</a>
-                <a href="/" class="item">Afmelden</a>
             </div>
         </div>
     </div>

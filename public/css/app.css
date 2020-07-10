@@ -3046,6 +3046,21 @@ body.chat-body #main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 575.98px) {
+  .Profile .main-content .classifieds .list {
+    display: none;
+  }
+}
+.Profile .main-content .classifieds .list.mobile {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .Profile .main-content .classifieds .list.mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
 .Profile .main-content .classifieds .pagination {
   margin-top: 60px;
 }
@@ -3054,25 +3069,21 @@ body.chat-body #main {
     margin-top: 25px;
   }
 }
-@media (max-width: 575.98px) {
-  .Profile > .container {
-    display: none;
-  }
-}
-.Profile .main-content.mobile {
+
+.SettingsMenu .main-content {
   padding-top: 30px;
   display: block;
 }
 @media (min-width: 576px) {
-  .Profile .main-content.mobile {
+  .SettingsMenu .main-content {
     display: none;
   }
 }
-.Profile .main-content.mobile .Avatar {
+.SettingsMenu .main-content .Avatar {
   width: 80px;
   height: 80px;
 }
-.Profile .main-content.mobile .name {
+.SettingsMenu .main-content .name {
   margin-top: 20px;
   color: #67707e;
   text-align: center;
@@ -3081,10 +3092,10 @@ body.chat-body #main {
   font-size: 16px;
   line-height: 100%;
 }
-.Profile .main-content.mobile .menu-list {
+.SettingsMenu .main-content .menu-list {
   margin-top: 25px;
 }
-.Profile .main-content.mobile .menu-list .item {
+.SettingsMenu .main-content .menu-list .item {
   display: block;
   border-top: 1px solid #e3e5e8;
   padding: 17px 25px;

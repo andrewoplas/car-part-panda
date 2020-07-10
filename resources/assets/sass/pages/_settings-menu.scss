@@ -1,0 +1,34 @@
+.SettingsMenu {
+    .main-content {
+        padding-top: 30px;
+        display: block;
+
+        @include media-breakpoint-up(sm) {
+            display: none;
+        }
+
+        .Avatar {
+            width: 80px;
+            height: 80px;
+        }
+
+        .name {
+            margin-top: 20px;
+            color: $theme-gray;
+            text-align: center;
+            @include font(16px, bold);
+        }
+
+        .menu-list {
+            margin-top: 25px;
+
+            .item {
+                display: block;
+                border-top: 1px solid $theme-lines;
+                padding: 17px 25px;
+                color: $theme-gray;
+                text-align: center;
+            }
+        }
+    }
+}

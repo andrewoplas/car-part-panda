@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14ad01cb-0d57-49cd-b1c6-da65723e3eba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/sass/components/_three-select.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/sass/pages/_settings-menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings-menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_radio-button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/components/_radio-button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/components/_select.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/_profile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/create-part-2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/create-part-2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/create-tires.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/create-tires.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +154,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/assets/sass/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -162,10 +162,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
-      <recent name="$PROJECT_DIR$/resources/assets/sass/layout" />
       <recent name="$PROJECT_DIR$/resources/assets/sass/pages" />
       <recent name="$PROJECT_DIR$/resources/views/pages" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$/resources/assets/sass/layout" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -199,7 +199,9 @@
       <workItem from="1594084630288" duration="24000" />
       <workItem from="1594089121656" duration="219000" />
       <workItem from="1594091917393" duration="619000" />
-      <workItem from="1594110589411" duration="5787000" />
+      <workItem from="1594110589411" duration="5943000" />
+      <workItem from="1594180942617" duration="60000" />
+      <workItem from="1594391774479" duration="1128000" />
     </task>
     <servers />
   </component>
@@ -259,10 +261,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593998369716" />
-    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1594089297030">
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1594180988673">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1594089297030" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1594180988673" />
     <state x="375" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593717495165">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -275,9 +277,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="319" y="126" key="scopes/0.23.1440.877@0.23.1440.877" timestamp="1593996887096" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1594127483326">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1594392956272">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1594127483326" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1594392956272" />
   </component>
 </project>
